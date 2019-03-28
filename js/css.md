@@ -1,0 +1,1 @@
+.gitbook-link,.dropdown.pull-right.js-toolbar-action,.btn.pull-right.js-toolbar-action,.btn.pull-right.js-toolbar-action{display:none !important}

@@ -1,0 +1,45 @@
+{
+  "title": "Luoyupu",
+  "author": "罗玉璞",
+  "description": "深入浅出的前端知识",
+  "styles": {
+    "website": "styles/hide.css"
+  },
+  "plugins": ["url-embed", "expandable-chapters", "code", "splitter", "-sharing", "sharing-plus", "tbfed-pagefooter", "github", "custom-favicon"],
+  "pluginsConfig": {
+    "favicon": "imgs/pufanyouzhu.ico",
+    "code": {
+      "copyButtons": false
+    },
+    "sharing": {
+      "douban": true,
+      "facebook": true,
+      "google": true,
+      "instapaper": true,
+      "linkedin": true,
+      "twitter": true,
+      "weibo": true,
+      "messenger": true,
+      "qq": true,
+      "qzone": true,
+      "viber": true,
+      "whatsapp": true,
+      "pocket": true,
+      "all": [
+        "douban", "facebook", "google", "instapaper", "linkedin","twitter", "weibo", 
+        "messenger","qq", "qzone","viber","whatsapp", "pocket"
+      ]
+    },
+    "tbfed-pagefooter": {
+      "modify_label": "Copyright  @罗玉璞"
+    },
+    "github": {
+      "url": "https://github.com/zhenmang"
+    }
+  },
+  "links": {
+    "sidebar" : {
+      "Github欢迎Star" : "https://github.com/zhenmang"
+    }
+  }
+}

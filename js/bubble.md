@@ -1,0 +1,25 @@
+### 冒泡
+
+**将最小的数字一次冒出来**
+
+网上的实现方式很多，我也写了一个，感觉更容易理解
+
+```
+function bubble (arr) {
+  for (var j = 0; j < arr.length; j++) {
+    for (var i = arr.length - 1; i > j; i--) {
+      if (arr[i] < arr[i - 1]) {
+        var mid = arr[i]
+        arr[i] = arr[i - 1]
+        arr[i - 1] = mid
+      }
+    }
+  }
+  return arr
+}
+console.log(bubble([100,3,44,1,5,2,50,9,6])) // [1, 2, 3, 5, 6, 9, 44, 50, 100]
+```
+
+整体思路如下所示：
+
+![bubble](/imgs/bubble.gif)
