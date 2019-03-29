@@ -1,3 +1,4 @@
-# 送人玫瑰，手有余香
+# 期待您的  **[Star](https://github.com/zhenmang)** ，激励本站持续更新！
 
-若此文对您有一丝丝帮助或启发，请留下您的珍贵  **[Star](https://github.com/zhenmang)**
+～深入浅出的剖析一些有趣的前端知识，以期给您带来一丝丝启发～
+

@@ -1,12 +1,12 @@
 .gitbook-link{
   display:none !important
 }
-.dropdown.pull-right.js-toolbar-action, .btn.pull-right.js-toolbar-action{
+/* .dropdown.pull-right.js-toolbar-action, .btn.pull-right.js-toolbar-action{
   display: none !important;
 }
 .btn.pull-right.js-toolbar-action[aria-label="GitHub"]{
   display: block !important;
-}
+} */
 footer.page-footer::before{
   display:block !important;position:absolute;content:"清风白茶无闲事，我在等风也等你";background-color:white;
 }

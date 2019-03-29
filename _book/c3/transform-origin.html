@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>事件循环 · Luoyupu</title>
+        <title>2d基点位置 transform-origin · Luoyupu</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,10 +65,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="bubble.html" />
+    <link rel="next" href="perspective.html" />
     
-    
-    <link rel="prev" href="event-queue.html" />
     
 
     </head>
@@ -133,9 +131,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="event-queue.html">
+        <li class="chapter " data-level="1.2.1" data-path="../js/event-queue.html">
             
-                <a href="event-queue.html">
+                <a href="../js/event-queue.html">
             
                     
                     事件队列
@@ -146,9 +144,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="event-loop.html">
+        <li class="chapter " data-level="1.2.2" data-path="../js/event-loop.html">
             
-                <a href="event-loop.html">
+                <a href="../js/event-loop.html">
             
                     
                     事件循环
@@ -159,9 +157,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="bubble.html">
+        <li class="chapter " data-level="1.2.3" data-path="../js/bubble.html">
             
-                <a href="bubble.html">
+                <a href="../js/bubble.html">
             
                     
                     算法-冒泡
@@ -172,9 +170,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="half-lookup.html">
+        <li class="chapter " data-level="1.2.4" data-path="../js/half-lookup.html">
             
-                <a href="half-lookup.html">
+                <a href="../js/half-lookup.html">
             
                     
                     算法-二分查找
@@ -185,9 +183,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="complexity.html">
+        <li class="chapter " data-level="1.2.5" data-path="../js/complexity.html">
             
-                <a href="complexity.html">
+                <a href="../js/complexity.html">
             
                     
                     算法复杂度
@@ -198,9 +196,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6" data-path="unique.html">
+        <li class="chapter " data-level="1.2.6" data-path="../js/unique.html">
             
-                <a href="unique.html">
+                <a href="../js/unique.html">
             
                     
                     设计模式-单例
@@ -211,9 +209,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7" data-path="inherit.html">
+        <li class="chapter " data-level="1.2.7" data-path="../js/inherit.html">
             
-                <a href="inherit.html">
+                <a href="../js/inherit.html">
             
                     
                     设计模式-继承
@@ -243,9 +241,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../c3/transform-origin.html">
+        <li class="chapter active" data-level="1.3.1" data-path="transform-origin.html">
             
-                <a href="../c3/transform-origin.html">
+                <a href="transform-origin.html">
             
                     
                     2d基点位置 transform-origin
@@ -256,9 +254,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../c3/perspective.html">
+        <li class="chapter " data-level="1.3.2" data-path="perspective.html">
             
-                <a href="../c3/perspective.html">
+                <a href="perspective.html">
             
                     
                     3d透视距离 perspective
@@ -269,9 +267,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../c3/transform-style.html">
+        <li class="chapter " data-level="1.3.3" data-path="transform-style.html">
             
-                <a href="../c3/transform-style.html">
+                <a href="transform-style.html">
             
                     
                     3d舞台 transform-style
@@ -282,9 +280,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../c3/perspective-origin.html">
+        <li class="chapter " data-level="1.3.4" data-path="perspective-origin.html">
             
-                <a href="../c3/perspective-origin.html">
+                <a href="perspective-origin.html">
             
                     
                     3d视觉方位perspective-origin
@@ -295,9 +293,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="../c3/backface-visibility.html">
+        <li class="chapter " data-level="1.3.5" data-path="backface-visibility.html">
             
-                <a href="../c3/backface-visibility.html">
+                <a href="backface-visibility.html">
             
                     
                     3d穿透backface-visibility
@@ -388,7 +386,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >事件循环</a>
+        <a href=".." >2d基点位置 transform-origin</a>
     </h1>
 </div>
 
@@ -403,45 +401,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="event-loop">Event Loop</h3>
-<p>&#x5B8F;&#x4EFB;&#x52A1;&#x548C;&#x5FAE;&#x4EFB;&#x52A1;&#x5207;&#x6362;&#x6267;&#x884C;&#xFF0C;&#x4E0D;&#x65AD;&#x5FAA;&#x73AF;&#xFF0C;&#x5F62;&#x6210;&#x4E86;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x3002;</p>
-<p><strong>&#x6D4F;&#x89C8;&#x5668;&#x6267;&#x884C;script&#x7684;&#x8FC7;&#x7A0B;</strong></p>
-<p><img src="../imgs/event-loop.jpg" alt="event-loop"></p>
-<p><strong>&#x5B8F;&#x4EFB;&#x52A1; Macrotask</strong> &#x6709;&#x54EA;&#x4E9B;&#xFF1F;</p>
-<p>HTML parsing&#x3001;Network events&#x3001;Mouse events&#x3001;Keybord events&#x3001;setTimeout&#x3001;setInterval</p>
-<p><strong>&#x5FAE;&#x4EFB;&#x52A1; Microtask</strong> &#x6709;&#x54EA;&#x4E9B;&#xFF1F;</p>
-<p>process.nextTick&#x3001;Promise.then&#x3001;Promise.catch&#x3001;Promise.finally&#x3001;DOM mutations</p>
-<p><strong>&#x5224;&#x65AD;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF0C;&#x5728;node&#x4E2D;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;</strong></p>
-<pre><code>// &#x4E3B;&#x7EBF;&#x7A0B;&#x76F4;&#x63A5;&#x6267;&#x884C;
-console.log(1);
-// &#x653E;&#x5165;&#x5B8F;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x4E2D;
-setTimeout(function() {
-    console.log(5);
-    new Promise(function(resolve) {
-        console.log(6);
-        resolve();
-    }).then(function() {
-        console.log(8)
-    })
-    process.nextTick(function() {
-      console.log(7);
-    })
-})
-// &#x5FAE;&#x4EFB;&#x52A1;
-process.nextTick(function() {
-    console.log(3);
-})
-// &#x4E3B;&#x7EBF;&#x7A0B;&#x76F4;&#x63A5;&#x6267;&#x884C;
-new Promise(function(resolve) {
-    console.log(2);
-    resolve();
-}).then(function() {
-    // &#x5FAE;&#x4EFB;&#x52A1;
-    console.log(4)
-})
-</code></pre><p>&#x8F93;&#x51FA;&#x987A;&#x5E8F;&#x5C31;&#x662F;&#x6570;&#x5B57;&#x672C;&#x8EAB;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x540C;&#x4E3A;&#x5FAE;&#x4EFB;&#x52A1;&#xFF0C;process.nextTick&#x4F1A;&#x5728;Promise.then&#x4E4B;&#x524D;&#x54E6; </p>
+                                <h3 id="2d&#x5F62;&#x6001;&#x4E0B;transform-origin">2d&#x5F62;&#x6001;&#x4E0B;transform-origin</h3>
+<p>transform-origin &#x5C5E;&#x6027;&#x7528;&#x6765;&#x8BBE;&#x7F6E; transform &#x53D8;&#x6362;&#x7684;&#x57FA;&#x70B9;&#x4F4D;&#x7F6E;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x57FA;&#x70B9;&#x4F4D;&#x7F6E;&#x4E3A;&#x5143;&#x7D20;&#x7684;&#x4E2D;&#x5FC3;&#x70B9;&#x3002;</p>
+<p>0.&#x539F;&#x72B6;&#x6001;</p>
+<p><img src="../imgs/transform-origin-default.png" alt="default"></p>
+<p>1.&#x9ED8;&#x8BA4;&#x57FA;&#x70B9;&#x4F4D;&#x7F6E;&#x4E3A;&#x5143;&#x7D20;&#x7684;&#x4E2D;&#x5FC3;&#x70B9;</p>
+<p><code>transform: rotate(45deg);</code></p>
+<p><img src="../imgs/transform-orign-center.png" alt="transform-orign-center"></p>
+<p>2.&#x50CF;&#x7D20;&#x503C;&#x6539;&#x53D8;&#x57FA;&#x70B9;&#x4F4D;&#x7F6E;</p>
+<pre><code>transform: rotate(45deg);
+
+transform-origin: 0 0;
+</code></pre><p><img src="../imgs/transform-origin-number.png" alt="transform-origin-number"></p>
+<p>3.&#x7528;&#x4F4D;&#x7F6E;&#x63CF;&#x8FF0;&#x6765;&#x6539;&#x53D8;&#x57FA;&#x70B9;&#x4F4D;&#x7F6E;</p>
+<pre><code>transform: rotate(45deg);
+
+transform-origin: top center;
+</code></pre><p><img src="../imgs/transform-origin-position.png" alt="transform-origin-position"></p>
+<p>4.&#x767E;&#x5206;&#x6BD4;&#x6539;&#x53D8;&#x57FA;&#x70B9;&#x4F4D;&#x7F6E;</p>
+<pre><code>transform: rotate(45deg);
+
+transform-origin: 100% 100%;
+</code></pre><p><img src="../imgs/transform-origin-percent.png" alt="transform-origin-percent"> </p>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">Copyright  @&#x7F57;&#x7389;&#x749E;
-2019-03-27 14:04:35
+2019-03-28 21:59:50
 </span></footer>
                                 
                                 </section>
@@ -469,12 +452,8 @@ new Promise(function(resolve) {
 
             
                 
-                <a href="event-queue.html" class="navigation navigation-prev " aria-label="Previous page: 事件队列">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="bubble.html" class="navigation navigation-next " aria-label="Next page: 算法-冒泡">
+                <a href="perspective.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 3d透视距离 perspective">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -485,7 +464,7 @@ new Promise(function(resolve) {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"事件循环","level":"1.2.2","depth":2,"next":{"title":"算法-冒泡","level":"1.2.3","depth":2,"path":"js/bubble.md","ref":"js/bubble.md","articles":[]},"previous":{"title":"事件队列","level":"1.2.1","depth":2,"path":"js/event-queue.md","ref":"js/event-queue.md","articles":[]},"dir":"ltr"},"config":{"plugins":["url-embed","expandable-chapters","code","splitter","-sharing","sharing-plus","tbfed-pagefooter","github","custom-favicon","livereload"],"styles":{"website":"styles/hide.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"Copyright  @罗玉璞"},"github":{"url":"https://github.com/zhenmang/day-day-up"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"imgs/pufanyouzhu.ico","custom-favicon":{},"url-embed":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp","pocket"],"douban":true,"facebook":true,"weibo":true,"instapaper":true,"whatsapp":true,"twitter":true,"messenger":true,"pocket":true,"google":true,"viber":true,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"罗玉璞","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Luoyupu","links":{"sidebar":{"Github欢迎Star":"https://github.com/zhenmang/day-day-up"}},"gitbook":"*","description":"深入浅出的前端知识"},"file":{"path":"js/event-loop.md","mtime":"2019-03-27T06:04:35.357Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-29T02:30:24.285Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2d基点位置 transform-origin","level":"1.3.1","depth":2,"next":{"title":"3d透视距离 perspective","level":"1.3.2","depth":2,"path":"c3/perspective.md","ref":"c3/perspective.md","articles":[]},"previous":{"title":"c3","level":"1.3","depth":1,"ref":"","articles":[{"title":"2d基点位置 transform-origin","level":"1.3.1","depth":2,"path":"c3/transform-origin.md","ref":"c3/transform-origin.md","articles":[]},{"title":"3d透视距离 perspective","level":"1.3.2","depth":2,"path":"c3/perspective.md","ref":"c3/perspective.md","articles":[]},{"title":"3d舞台 transform-style","level":"1.3.3","depth":2,"path":"c3/transform-style.md","ref":"c3/transform-style.md","articles":[]},{"title":"3d视觉方位perspective-origin","level":"1.3.4","depth":2,"path":"c3/perspective-origin.md","ref":"c3/perspective-origin.md","articles":[]},{"title":"3d穿透backface-visibility","level":"1.3.5","depth":2,"path":"c3/backface-visibility.md","ref":"c3/backface-visibility.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["url-embed","expandable-chapters","code","splitter","-sharing","sharing-plus","tbfed-pagefooter","github","custom-favicon","livereload"],"styles":{"website":"styles/hide.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"Copyright  @罗玉璞"},"github":{"url":"https://github.com/zhenmang/day-day-up"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"imgs/pufanyouzhu.ico","custom-favicon":{},"url-embed":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp","pocket"],"douban":true,"facebook":true,"weibo":true,"instapaper":true,"whatsapp":true,"twitter":true,"messenger":true,"pocket":true,"google":true,"viber":true,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"罗玉璞","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Luoyupu","links":{"sidebar":{"Github欢迎Star":"https://github.com/zhenmang/day-day-up"}},"gitbook":"*","description":"深入浅出的前端知识"},"file":{"path":"c3/transform-origin.md","mtime":"2019-03-28T13:59:50.077Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-29T02:30:24.285Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
