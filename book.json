@@ -34,12 +34,12 @@
       "modify_label": "Copyright  @罗玉璞"
     },
     "github": {
-      "url": "https://github.com/zhenmang/day-day-up"
+      "url": "https://github.com/zhenmang/day-day-up/blob/master/SUMMARY.md"
     }
   },
   "links": {
     "sidebar" : {
-      "Github欢迎Star" : "https://github.com/zhenmang/day-day-up"
+      "github" : "https://github.com/zhenmang/day-day-up/blob/master/SUMMARY.md"
     }
   }
 }
