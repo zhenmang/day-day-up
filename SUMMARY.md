@@ -14,11 +14,14 @@
   - [3d舞台 transform-style](c3/transform-style.md)
   - [3d视觉方位perspective-origin](c3/perspective-origin.md)
   - [3d穿透backface-visibility](c3/backface-visibility.md)
-- frame-source
+- frame source
   - [vue](frame-source/vue.md)
   - [React](frame-source/react.md)
   
-
-- 代码规范
+- code standards
   - [eslint](code_standard/eslint.md)
   - [prettier](code_standard/prettier.md)
+
+- layout mode
+  - [smart-rem(English)](layout/smart-rem.md)
+  - [smart-rem(Chinese)](layout/smart-rem-cn.md)
