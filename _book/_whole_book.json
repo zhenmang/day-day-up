@@ -12,9 +12,19 @@
       "copyButtons": false
     },
     "sharing": {
+      "douban": true,
       "facebook": true,
       "google": true,
+      "instapaper": true,
+      "linkedin": true,
+      "twitter": true,
+      "weibo": true,
+      "messenger": true,
       "qq": true,
+      "qzone": true,
+      "viber": true,
+      "whatsapp": true,
+      "pocket": true,
       "all": [
         "douban", "facebook", "google", "instapaper", "linkedin","twitter", "weibo", 
         "messenger","qq", "qzone","viber","whatsapp", "pocket"
