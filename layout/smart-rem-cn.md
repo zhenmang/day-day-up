@@ -1,6 +1,8 @@
 ### smart-rem
 
-**smart-rem是一个可以自动计算rem的代码库，它适用于以下开发环境：**
+**还在发愁布局问题？**
+
+再不用smart-rem，可能就out了。这是一个可以自动计算rem的代码库，它适用于所有主流开发环境：
 
 **浏览器环境**
 
@@ -18,7 +20,7 @@
 
 各种环境的用法分列如下：
 
-### 1.浏览器环境
+### 1.script 标签
 
 **第一步:**
 
@@ -65,7 +67,7 @@ smartRem(750)
 50px     => 0.5rem
 ```
 
-### 2.vue
+### 2.vue 框架
 
 **第一步:**
 
@@ -111,7 +113,7 @@ smartRem(750)
 
 ```
 
-### 3.react
+### 3.react 框架
 
 **第一步:**
 
@@ -159,7 +161,7 @@ smartRem(750)
 
 ```
 
-### 4.angular
+### 4.angular 框架
 
 **第一步:**
 
@@ -206,7 +208,7 @@ smartRem(750)
 
 ```
 
-### 5.nuxt
+### 5.nuxt 框架
 
 **第一步:**
 
@@ -276,7 +278,7 @@ layouts/*.vue.
 
 ```
 
-### 6.next
+### 6.next 框架
 
 **第一步:**
 
@@ -349,3 +351,20 @@ export default class MyDocument extends Document {
 
 ```
 
+
+
+
+
+------
+
+其它：
+
+​	如果你已经使用过代码编辑器插件cssrem，你可以做以下设置：
+
+​			在VSCode中，把Root Font Size的值设置为100
+
+​			在Sublime中，把px_to_rem的值设置为100
+
+
+
+​	如果你已经使用过开发依赖包postcss-pxtorem，你可以将rootValue值设为100

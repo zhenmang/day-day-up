@@ -1,12 +1,10 @@
 ### smart-rem
 
-​	**smart-rem is library for automatic REM calculation, it's suitable for browser environment, vue frame, react frame, angular frame, nuxt frame, next frame.List the usages as follows.**
-
 # Usage
 
-**smart-rem is suitable for browser environment, vue frame, react frame, angular frame, nuxt frame, next frame.List the usages as follows.**
+​		**smart-rem is a library for automatic REM calculation, it's suitable for Script Tag, Vue Frameworks, React Frameworks, Angular Frameworks, Nuxt Frameworks, Next Frameworks.List the usages as follows.**
 
-### 1.browser
+### 1.Script Tag
 
 **Step one:**
 
@@ -53,7 +51,7 @@ In file *.css
 50px     => 0.5rem
 ```
 
-### 2.vue
+### 2.Vue Frameworks
 
 **Step one:**
 
@@ -97,7 +95,7 @@ In file src/*.vue
 50px     => 0.5rem
 ```
 
-### 3.react
+### 3.React Frameworks
 
 **Step one:**
 
@@ -141,7 +139,7 @@ In file src/*.css
 50px     => 0.5rem
 ```
 
-### 4.angular
+### 4.Angular Frameworks
 
 **Step one:**
 
@@ -185,7 +183,7 @@ In file src/**/*.styl
 50px     => 0.5rem
 ```
 
-### 5.nuxt
+### 5.Nuxt Frameworks
 
 **Step one:**
 
@@ -250,7 +248,7 @@ In file pages/*.vue,
 50px     => 0.5rem
 ```
 
-### 6.next
+### 6.Next Frameworks
 
 **Step one:**
 
@@ -321,3 +319,16 @@ In file pages/*.js
 50px     => 0.5rem
 ```
 
+
+
+------
+
+If you have used cssrem Code-Editor-Plugin, you could make the following configuration:
+
+​	In VSCode Editor: the value of Root Font Size should be 100
+
+​	In Sublime Editor: the value of px_to_rem should be 100
+
+
+
+If you have used the postcss-pxtorem package as devDependencies, you can set the value of rootValue to 100
