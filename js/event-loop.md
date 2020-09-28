@@ -47,3 +47,9 @@ new Promise(function(resolve) {
 ```
 
 输出顺序就是数字本身。注意：同为微任务，process.nextTick会在Promise.then之前哦
+
+
+
+
+
+[浏览器事件循环](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)

@@ -1,0 +1,1477 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>flutter-架构理解 · Luoyupu</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="罗玉璞">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/hide.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="uni-app.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    js
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="dui.html">
+            
+                <a href="dui.html">
+            
+                    
+                    堆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="zhan.html">
+            
+                <a href="zhan.html">
+            
+                    
+                    栈与队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="lianbiao.html">
+            
+                <a href="lianbiao.html">
+            
+                    
+                    数据结构-链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="erchashu.html">
+            
+                <a href="erchashu.html">
+            
+                    
+                    数据结构-二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="bubble.html">
+            
+                <a href="bubble.html">
+            
+                    
+                    算法-冒泡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="half-lookup.html">
+            
+                <a href="half-lookup.html">
+            
+                    
+                    算法-二分查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="kuaipai.html">
+            
+                <a href="kuaipai.html">
+            
+                    
+                    算法-快排
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="complexity.html">
+            
+                <a href="complexity.html">
+            
+                    
+                    算法复杂度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="unique.html">
+            
+                <a href="unique.html">
+            
+                    
+                    设计模式-单例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="inherit.html">
+            
+                <a href="inherit.html">
+            
+                    
+                    设计模式-继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="observer.html">
+            
+                <a href="observer.html">
+            
+                    
+                    设计模式-观察者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="gaojie.html">
+            
+                <a href="gaojie.html">
+            
+                    
+                    高阶函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    c3
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../c3/transform-origin.html">
+            
+                <a href="../c3/transform-origin.html">
+            
+                    
+                    2d基点位置 transform-origin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../c3/perspective.html">
+            
+                <a href="../c3/perspective.html">
+            
+                    
+                    3d透视距离 perspective
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../c3/transform-style.html">
+            
+                <a href="../c3/transform-style.html">
+            
+                    
+                    3d舞台 transform-style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../c3/perspective-origin.html">
+            
+                <a href="../c3/perspective-origin.html">
+            
+                    
+                    3d视觉方位perspective-origin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../c3/backface-visibility.html">
+            
+                <a href="../c3/backface-visibility.html">
+            
+                    
+                    3d穿透backface-visibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../c3/smart-rem.html">
+            
+                <a href="../c3/smart-rem.html">
+            
+                    
+                    rem布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    frame
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <a target="_blank" href="http://localhost:8081/vue-design/zh/essence-of-comp.html">
+            
+                    
+                    vue-source-code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="react-diff-dom.html">
+            
+                <a href="react-diff-dom.html">
+            
+                    
+                    React-diff-dom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../frame-source/webpack.html">
+            
+                <a href="../frame-source/webpack.html">
+            
+                    
+                    webpack-source-code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    code-standards
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../code_standard/eslint.html">
+            
+                <a href="../code_standard/eslint.html">
+            
+                    
+                    eslint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../code_standard/prettier.html">
+            
+                <a href="../code_standard/prettier.html">
+            
+                    
+                    prettier
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="browserneihe.html">
+            
+                <a href="browserneihe.html">
+            
+                    
+                    浏览器内核
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="browserneihe.html">
+            
+                <a href="browserneihe.html">
+            
+                    
+                    浏览器内核
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="browser.html">
+            
+                <a href="browser.html">
+            
+                    
+                    chrome架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="page-render.html">
+            
+                <a href="page-render.html">
+            
+                    
+                    页面渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="event-queue.html">
+            
+                <a href="event-queue.html">
+            
+                    
+                    事件队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="event-loop.html">
+            
+                <a href="event-loop.html">
+            
+                    
+                    事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="performace-optimizition.html">
+            
+                <a href="performace-optimizition.html">
+            
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    internet
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="internet.html">
+            
+                <a href="internet.html">
+            
+                    
+                    互联网通信原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="tcp.html">
+            
+                <a href="tcp.html">
+            
+                    
+                    三次握手四次挥手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="TLS&SSL.html">
+            
+                <a href="TLS&SSL.html">
+            
+                    
+                    TLS&SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    大前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="xiaochengxu.html">
+            
+                <a href="xiaochengxu.html">
+            
+                    
+                    小程序运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="uni-app.html">
+            
+                <a href="uni-app.html">
+            
+                    
+                    uni-app优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.3" data-path="flutter.html">
+            
+                <a href="flutter.html">
+            
+                    
+                    flutter-架构理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Nginx
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="nginx-base.html">
+            
+                <a href="nginx-base.html">
+            
+                    
+                    常用功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="nginx-set.html">
+            
+                <a href="nginx-set.html">
+            
+                    
+                    基本命令和基本配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" >
+            
+                <span>
+            
+                    
+                    使用细节
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="root-alias.html">
+            
+                <a href="root-alias.html">
+            
+                    
+                    root和alias区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="proxy_pass.html">
+            
+                <a href="proxy_pass.html">
+            
+                    
+                    location和proxy_pass路径合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Nodejs
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="nodequbie.html">
+            
+                <a href="nodequbie.html">
+            
+                    
+                    nodejs与浏览器区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="nodejiagou.html">
+            
+                <a href="nodejiagou.html">
+            
+                    
+                    底层实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="nodequdong.html">
+            
+                <a href="nodequdong.html">
+            
+                    
+                    运行机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="duojincheng.html">
+            
+                <a href="duojincheng.html">
+            
+                    
+                    多进程实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Mysql
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../mysql-base.md">
+            
+                <span>
+            
+                    
+                    常用功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" >
+            
+                <span>
+            
+                    
+                    慢查
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.2.1" data-path="mancha.html">
+            
+                <a href="mancha.html">
+            
+                    
+                    记录慢查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.2" data-path="manchayouhua.html">
+            
+                <a href="manchayouhua.html">
+            
+                    
+                    慢查优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="redis-op.html">
+            
+                <a href="redis-op.html">
+            
+                    
+                    常用操作指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="redistaotai.html">
+            
+                <a href="redistaotai.html">
+            
+                    
+                    淘汰机制和缓存策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    CDN
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="cnd-yuanli.html">
+            
+                <a href="cnd-yuanli.html">
+            
+                    
+                    运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="cdn-shiyong.html">
+            
+                <a href="cdn-shiyong.html">
+            
+                    
+                    适用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    编译
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="bianyi.html">
+            
+                <a href="bianyi.html">
+            
+                    
+                    编译过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="js-ast.html">
+            
+                <a href="js-ast.html">
+            
+                    
+                    AST
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    架构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="mvvm.html">
+            
+                <a href="mvvm.html">
+            
+                    
+                    mvc、mvp、vvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="weifuwu.html">
+            
+                <a href="weifuwu.html">
+            
+                    
+                    微服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="danyuanhua.html">
+            
+                <a href="danyuanhua.html">
+            
+                    
+                    单元化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="xaas.html">
+            
+                <a href="xaas.html">
+            
+                    
+                    XaaS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >flutter-架构理解</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="flutter-&#x67B6;&#x6784;">Flutter &#x67B6;&#x6784;</h2>
+<p>Flutter&#x6846;&#x67B6;&#x5206;&#x4E09;&#x5C42;
+ Framework&#xFF0C;Engine&#xFF0C; Embedder</p>
+<p><img src="../imgs/fluttersystem.webp" alt="fluttersystem"></p>
+<p>Framework&#x4F7F;&#x7528;dart&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#xFF0C;&#x5305;&#x62EC;UI&#xFF0C;&#x6587;&#x672C;&#xFF0C;&#x56FE;&#x7247;&#xFF0C;&#x6309;&#x94AE;&#x7B49;Widgets&#xFF0C;&#x6E32;&#x67D3;&#xFF0C;&#x52A8;&#x753B;&#xFF0C;&#x624B;&#x52BF;&#x7B49;&#x3002;&#x6B64;&#x90E8;&#x5206;&#x7684;&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#x662F;flutter&#x4ED3;&#x5E93;&#x4E0B;&#x7684;flutter package&#xFF0C;&#x4EE5;&#x53CA;sky_engine&#x4ED3;&#x5E93;&#x4E0B;&#x7684; io, async, ui(dart:ui&#x5E93;&#x63D0;&#x4F9B;&#x4E86;Flutter&#x6846;&#x67B6;&#x548C;&#x5F15;&#x64CE;&#x4E4B;&#x95F4;&#x7684;&#x63A5;&#x53E3;)&#x7B49;package&#x3002;</p>
+<p>Engine&#x4F7F;&#x7528;C++&#x5B9E;&#x73B0;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x62EC;:Skia, Dart &#x548C; Text&#x3002;</p>
+<ul>
+<li>Skia&#x662F;&#x5F00;&#x6E90;&#x7684;&#x4E8C;&#x7EF4;&#x56FE;&#x5F62;&#x5E93;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x9002;&#x7528;&#x4E8E;&#x591A;&#x79CD;&#x8F6F;&#x786C;&#x4EF6;&#x5E73;&#x53F0;&#x7684;&#x901A;&#x7528;API&#x3002;&#x5176;&#x5DF2;&#x4F5C;&#x4E3A;Google Chrome&#xFF0C;Chrome OS&#xFF0C;Android, Mozilla Firefox, Firefox OS&#x7B49;&#x5176;&#x4ED6;&#x4F17;&#x591A;&#x4EA7;&#x54C1;&#x7684;&#x56FE;&#x5F62;&#x5F15;&#x64CE;&#xFF0C;&#x652F;&#x6301;&#x5E73;&#x53F0;&#x8FD8;&#x5305;&#x62EC;Windows, macOS, iOS&#xFF0C;Android&#xFF0C;Ubuntu&#x7B49;&#x3002;</li>
+<li>Dart &#x90E8;&#x5206;&#x4E3B;&#x8981;&#x5305;&#x62EC;:Dart Runtime&#xFF0C;Garbage Collection(GC)&#xFF0C;&#x5982;&#x679C;&#x662F;Debug&#x6A21;&#x5F0F;&#x7684;&#x8BDD;&#xFF0C;&#x8FD8;&#x5305;&#x62EC;JIT(Just In Time)&#x652F;&#x6301;&#x3002;Release&#x548C;Profile&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x662F;AOT(Ahead Of Time)&#x7F16;&#x8BD1;&#x6210;&#x4E86;&#x539F;&#x751F;&#x7684;arm&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x4E0D;&#x5B58;&#x5728;JIT&#x90E8;&#x5206;&#x3002;</li>
+<li>Text &#x5373;&#x6587;&#x672C;&#x6E32;&#x67D3;&#xFF0C;&#x5176;&#x6E32;&#x67D3;&#x5C42;&#x6B21;&#x5982;&#x4E0B;:&#x884D;&#x751F;&#x81EA;  Minikin&#x7684;libtxt&#x5E93;(&#x7528;&#x4E8E;&#x5B57;&#x4F53;&#x9009;&#x62E9;&#xFF0C;&#x5206;&#x9694;&#x884C;)&#xFF1B;HartBuzz&#x7528;&#x4E8E;&#x5B57;&#x5F62;&#x9009;&#x62E9;&#x548C;&#x6210;&#x578B;&#xFF1B;Skia&#x4F5C;&#x4E3A;&#x6E32;&#x67D3;/GPU&#x540E;&#x7AEF;&#xFF0C;&#x5728;Android&#x548C;Fuchsia&#x4E0A;&#x4F7F;&#x7528;FreeType&#x6E32;&#x67D3;&#xFF0C;&#x5728;iOS&#x4E0A;&#x4F7F;&#x7528;CoreGraphics&#x6765;&#x6E32;&#x67D3;&#x5B57;&#x4F53;&#x3002;</li>
+</ul>
+<p>Embedder&#x662F;&#x4E00;&#x4E2A;&#x5D4C;&#x5165;&#x5C42;&#xFF0C;&#x901A;&#x8FC7;&#x8BE5;&#x5C42;&#x628A;Flutter&#x5D4C;&#x5165;&#x5230;&#x5404;&#x4E2A;&#x5E73;&#x53F0;&#x4E0A;&#x53BB;&#xFF0C;Embedder&#x7684;&#x4E3B;&#x8981;&#x5DE5;&#x4F5C;&#x5305;&#x62EC;&#x6E32;&#x67D3;Surface&#x8BBE;&#x7F6E;, &#x7EBF;&#x7A0B;&#x8BBE;&#x7F6E;&#xFF0C;&#x4EE5;&#x53CA;&#x63D2;&#x4EF6;&#x7B49;&#x3002;&#x5E73;&#x53F0;(&#x5982;iOS)&#x53EA;&#x662F;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x753B;&#x5E03;&#xFF0C;&#x5269;&#x4F59;&#x7684;&#x6240;&#x6709;&#x6E32;&#x67D3;&#x76F8;&#x5173;&#x7684;&#x903B;&#x8F91;&#x90FD;&#x5728;Flutter&#x5185;&#x90E8;&#xFF0C;&#x8FD9;&#x5C31;&#x4F7F;&#x5F97;&#x5B83;&#x5177;&#x6709;&#x4E86;&#x5F88;&#x597D;&#x7684;&#x8DE8;&#x7AEF;&#x4E00;&#x81F4;&#x6027;&#x3002;</p>
+<h2 id="dart&#x8BED;&#x8A00;">Dart&#x8BED;&#x8A00;</h2>
+<p>Dart &#x4E5F;&#x662F;&#x4E00;&#x79CD;VM&#x8BED;&#x8A00;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x6BCF;&#x4E2A;&#x8FD0;&#x884C;flutter&#x7684;app&#x4E2D;&#x90FD;&#x6709;&#x4E00;&#x4E2A;dart&#x7684;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x3002;&#x7F16;&#x8BD1;&#x6A21;&#x5F0F;&#x652F;&#x6301;AOT&#x548C;JIT&#x3002;
+ Dart&#x6700;&#x5F00;&#x59CB;&#x662F;google&#x8BBE;&#x8BA1;&#x51FA;&#x6765;&#x66FF;&#x4EE3;javascript&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5E76;&#x6CA1;&#x6709;&#x51D1;&#x6548;&#x3002;&#x540E;&#x9762;Flutter&#x9009;&#x62E9;&#x4E86;Dart, &#x624D;&#x4F7F;Dart&#x6D3B;&#x8DC3;&#x8D77;&#x6765;&#x3002;</p>
+<p>Dart&#x8BED;&#x8A00;&#x7684;&#x7279;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x5355;&#x8FDB;&#x7A0B;&#x5F02;&#x6B65;&#x4E8B;&#x4EF6;&#x6A21;&#x578B;</li>
+<li>&#x5F3A;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x7C7B;&#x578B;&#x63A8;&#x65AD;</li>
+<li>&#x5177;&#x6709;&#x6781;&#x9AD8;&#x7684;&#x8FD0;&#x884C;&#x6548;&#x7387;&#x548C;&#x4F18;&#x79C0;&#x7684;&#x4EE3;&#x7801;&#x8FD0;&#x884C;&#x4F18;&#x5316;&#x7684;VM&#xFF0C;&#x6839;&#x636E;&#x65E9;&#x524D;&#x7684;&#x57FA;&#x51C6;&#x6D4B;&#x8BD5;&#xFF0C;&#x6027;&#x80FD;&#x6BD4;&#x80A9; Java7 &#x7684;JVM&#xFF1B;</li>
+<li>&#x72EC;&#x7279;&#x7684;&#x9694;&#x79BB;&#x533A;( Isolate )&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x591A;&#x7EBF;&#x7A0B;</li>
+<li>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#xFF0C;&#x4E00;&#x5207;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5747;&#x6D3E;&#x751F;&#x81EA; Object</li>
+<li>&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;&#xFF0C;&#x6CDB;&#x578B;&#x652F;&#x6301;</li>
+<li>&#x5F3A;&#x5927;&#x7684; Future &#x548C; Stream &#x6A21;&#x578B;,&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5B9E;&#x73B0;&#x9AD8;&#x6548;&#x7684;&#x4EE3;&#x7801;</li>
+<li>Minix &#x7279;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x66F4;&#x597D;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#x590D;&#x7528;</li>
+<li>&#x5168;&#x5E73;&#x53F0;&#x8BED;&#x8A00;&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x7684;&#x80DC;&#x4EFB;&#x79FB;&#x52A8;&#x548C;&#x524D;&#x540E;&#x7AEF;&#x7684;&#x5F00;&#x53D1;</li>
+<li>&#x5728;&#x8BED;&#x6CD5;&#x4E0A;&#xFF0C;Dart &#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x4FBF;&#x6377;&#x7684;&#x64CD;&#x4F5C;</li>
+</ul>
+<h2 id="flutter&#x7EBF;&#x7A0B;&#x7BA1;&#x7406;">Flutter&#x7EBF;&#x7A0B;&#x7BA1;&#x7406;</h2>
+<p>Flutter Engine&#x81EA;&#x5DF1;&#x4E0D;&#x521B;&#x5EFA;, &#x7BA1;&#x7406;&#x7EBF;&#x7A0B;&#x3002;Flutter Engine&#x7EBF;&#x7A0B;&#x7684;&#x521B;&#x5EFA;&#x548C;&#x7BA1;&#x7406;&#x662F;&#x7531;embedder&#x8D1F;&#x8D23;&#x7684;</p>
+<p>Embeder&#x63D0;&#x4F9B;&#x56DB;&#x4E2A;Task Runner, &#x6BCF;&#x4E2A;Task Runner&#x8D1F;&#x8D23;&#x4E0D;&#x540C;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;Flutter Engine&#x4E0D;&#x5728;&#x4E4E;Task Runner&#x5177;&#x4F53;&#x8DD1;&#x5728;&#x54EA;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x9700;&#x8981;&#x7EBF;&#x7A0B;&#x914D;&#x7F6E;&#x5728;&#x6574;&#x4E00;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x91CC;&#x9762;&#x4FDD;&#x6301;&#x7A33;&#x5B9A;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x4E00;&#x4E2A;Runner&#x6700;&#x597D;&#x59CB;&#x7EC8;&#x4FDD;&#x6301;&#x5728;&#x540C;&#x4E00;&#x7EBF;&#x7A0B;&#x8FD0;&#x884C;</p>
+<h4 id="platform-task-runner">Platform Task Runner</h4>
+<p>&#x662F;Flutter Engine&#x7684;&#x4E3B;Task Runner&#xFF0C;&#x8FD0;&#x884C;Platform Task Runner&#x7684;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x662F;&#x4E3B;&#x7EBF;&#x7A0B;&#x3002;&#x7C7B;&#x4F3C;&#x4E8E;Android Main Thread&#x6216;&#x8005;iOS&#x7684;Main Thread&#x3002;&#x5BF9;&#x4E8E;Flutter Engine&#x6765;&#x8BF4;Platform Runner&#x6240;&#x5728;&#x7684;&#x7EBF;&#x7A0B;&#x8DDF;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x5E76;&#x6CA1;&#x6709;&#x5B9E;&#x8D28;&#x4E0A;&#x7684;&#x533A;&#x522B;&#x3002; &#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x542F;&#x52A8;&#x591A;&#x4E2A;Engine&#x5B9E;&#x4F8B;&#xFF0C;&#x6BCF;&#x4E2A;Engine&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;Platform Runner&#xFF0C;&#x6BCF;&#x4E2A;Runner&#x8DD1;&#x5728;&#x5404;&#x81EA;&#x7684;&#x7EBF;&#x7A0B;&#x91CC;&#x3002;&#x8FD9;&#x4E5F;&#x662F;Fuchsia&#xFF08;Google&#x6B63;&#x5728;&#x5F00;&#x53D1;&#x7684;&#x64CD;&#x4F5C;&#x5F15;&#x64CE;&#xFF09;&#x91CC;Content Handler&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x3002;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E00;&#x4E2A;Flutter&#x5E94;&#x7528;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Engine&#x5B9E;&#x4F8B;&#xFF0C;Engine&#x521B;&#x5EFA;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4F9B;Platform Runner&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x8DDF;Flutter Engine&#x7684;&#x6240;&#x6709;&#x4EA4;&#x4E92;&#xFF08;&#x63A5;&#x53E3;&#x8C03;&#x7528;&#xFF09;&#x5FC5;&#x987B;&#x53D1;&#x751F;&#x5728;Platform Thread&#xFF0C;&#x8BD5;&#x56FE;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x4E2D;&#x8C03;&#x7528;Flutter Engine&#x4F1A;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x9884;&#x671F;&#x7684;&#x5F02;&#x5E38;&#x3002;&#x8FD9;&#x8DDF;Android&#x548C;IOS&#x5BF9;&#x4E8E;UI&#x7684;&#x64CD;&#x4F5C;&#x90FD;&#x5FC5;&#x987B;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x8FDB;&#x884C;&#x76F8;&#x7C7B;&#x4F3C;&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x5728;Flutter Engine&#x4E2D;&#x6709;&#x5F88;&#x591A;&#x6A21;&#x5757;&#x90FD;&#x662F;&#x975E;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x3002;&#x4E00;&#x65E6;&#x5F15;&#x64CE;&#x6B63;&#x5E38;&#x542F;&#x52A8;&#x8FD0;&#x884C;&#x8D77;&#x6765;&#xFF0C;&#x6240;&#x6709;&#x5F15;&#x64CE;API&#x8C03;&#x7528;&#x90FD;&#x5C06;&#x5728;Platform Thread&#x91CC;&#x53D1;&#x751F;&#x3002;</p>
+<p>Platform Runner&#x6240;&#x5728;&#x7684;Thread&#x4E0D;&#x4EC5;&#x4EC5;&#x5904;&#x7406;&#x4E0E;Engine&#x4EA4;&#x4E92;&#xFF0C;&#x5B83;&#x8FD8;&#x5904;&#x7406;&#x6765;&#x81EA;&#x5E73;&#x53F0;&#x7684;&#x6D88;&#x606F;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x5904;&#x7406;&#x6BD4;&#x8F83;&#x65B9;&#x4FBF;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x5F15;&#x64CE;&#x7684;&#x8C03;&#x7528;&#x90FD;&#x53EA;&#x6709;&#x5728;Platform Thread&#x8FDB;&#x884C;&#x624D;&#x80FD;&#x662F;&#x5B89;&#x5168;&#x7684;&#xFF0C;Native Plugins&#x4E0D;&#x5FC5;&#x8981;&#x505A;&#x989D;&#x5916;&#x7684;&#x7EBF;&#x7A0B;&#x64CD;&#x4F5C;&#x5C31;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x64CD;&#x4F5C;&#x80FD;&#x591F;&#x5728;Platform Thread&#x8FDB;&#x884C;&#x3002;&#x5982;&#x679C;Plugin&#x81EA;&#x5DF1;&#x542F;&#x52A8;&#x4E86;&#x989D;&#x5916;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x9700;&#x8981;&#x8D1F;&#x8D23;&#x5C06;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x6D3E;&#x53D1;&#x56DE;Platform Thread&#x4EE5;&#x4FBF;Dart&#x80FD;&#x591F;&#x5B89;&#x5168;&#x5730;&#x5904;&#x7406;&#x3002;&#x89C4;&#x5219;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5BF9;&#x4E8E;Flutter Engine&#x7684;&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x90FD;&#x9700;&#x4FDD;&#x8BC1;&#x5728;Platform Thread&#x8FDB;&#x884C;&#x3002;</p>
+<p>&#x963B;&#x585E;Platform Thread&#x4E0D;&#x4F1A;&#x76F4;&#x63A5;&#x5BFC;&#x81F4;Flutter&#x5E94;&#x7528;&#x7684;&#x5361;&#x987F;&#xFF08;&#x8DDF;iOS android&#x4E3B;&#x7EBF;&#x7A0B;&#x4E0D;&#x540C;&#xFF09;&#x3002;&#x5C3D;&#x7BA1;&#x5982;&#x6B64;&#xFF0C;&#x5E73;&#x53F0;&#x5BF9;Platform Thread&#x8FD8;&#x662F;&#x6709;&#x5F3A;&#x5236;&#x6267;&#x884C;&#x9650;&#x5236;&#x3002;&#x6240;&#x4EE5;&#x5EFA;&#x8BAE;&#x590D;&#x6742;&#x8BA1;&#x7B97;&#x903B;&#x8F91;&#x64CD;&#x4F5C;&#x4E0D;&#x8981;&#x653E;&#x5728;Platform Thread&#x800C;&#x662F;&#x653E;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#xFF08;&#x4E0D;&#x5305;&#x62EC;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x8BA8;&#x8BBA;&#x7684;&#x8FD9;&#x4E2A;&#x56DB;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF09;&#x3002;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x5904;&#x7406;&#x5B8C;&#x6BD5;&#x540E;&#x5C06;&#x7ED3;&#x679C;&#x8F6C;&#x53D1;&#x56DE;Platform Thread&#x3002;&#x957F;&#x65F6;&#x95F4;&#x5361;&#x4F4F;Platform Thread&#x5E94;&#x7528;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x7CFB;&#x7EDF;Watchdot&#x5F3A;&#x884C;&#x6740;&#x6B7B;&#x3002;</p>
+<h4 id="ui-task-runner">UI Task Runner</h4>
+<p>Flutter Engine&#x7528;&#x4E8E;&#x6267;&#x884C;Dart root isolate&#x4EE3;&#x7801;&#x3002;Root isolate&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#xFF0C;&#x5B83;&#x7ED1;&#x5B9A;&#x4E86;&#x4E0D;&#x5C11;Flutter&#x9700;&#x8981;&#x7684;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x3002;Root isolate&#x8FD0;&#x884C;&#x5E94;&#x7528;&#x7684;main code&#x3002;&#x5F15;&#x64CE;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x4E3A;&#x5176;&#x589E;&#x52A0;&#x4E86;&#x5FC5;&#x8981;&#x7684;&#x7ED1;&#x5B9A;&#xFF0C;&#x4F7F;&#x5176;&#x5177;&#x5907;&#x8C03;&#x5EA6;&#x63D0;&#x4EA4;&#x6E32;&#x67D3;&#x5E27;&#x7684;&#x80FD;&#x529B;&#x3002;</p>
+<ol>
+<li>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E00;&#x5E27;&#xFF0C;&#x5F15;&#x64CE;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x6709;&#xFF1A;</li>
+<li>Root isolate&#x901A;&#x77E5;Flutter Engine&#x6709;&#x5E27;&#x9700;&#x8981;&#x6E32;&#x67D3;&#x3002;</li>
+<li>Flutter Engine&#x901A;&#x77E5;&#x5E73;&#x53F0;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;vsync&#x7684;&#x65F6;&#x5019;&#x5F97;&#x5230;&#x901A;&#x77E5;&#x3002;</li>
+<li>&#x5E73;&#x53F0;&#x7B49;&#x5F85;&#x4E0B;&#x4E00;&#x4E2A;vsync</li>
+<li>&#x5BF9;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x548C;Widgets&#x8FDB;&#x884C;Layout&#x5E76;&#x751F;&#x6210;&#x4E00;&#x4E2A;Layer Tree&#xFF0C;Layer Tree&#x9A6C;&#x4E0A;&#x88AB;&#x63D0;&#x4EA4;&#x7ED9;Flutter Engine&#x3002;&#x5F53;&#x524D;&#x9636;&#x6BB5;&#x6CA1;&#x6709;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x5149;&#x6805;&#x5316;&#xFF0C;&#x8FD9;&#x4E2A;&#x6B65;&#x9AA4;&#x4EC5;&#x662F;&#x751F;&#x6210;&#x4E86;&#x5BF9;&#x9700;&#x8981;&#x7ED8;&#x5236;&#x5185;&#x5BB9;&#x7684;&#x63CF;&#x8FF0;&#x3002;</li>
+<li>&#x521B;&#x5EFA;&#x6216;&#x8005;&#x66F4;&#x65B0;Tree&#xFF0C;&#x8FD9;&#x4E2A;Tree&#x5305;&#x542B;&#x4E86;&#x7528;&#x4E8E;&#x5C4F;&#x5E55;&#x4E0A;&#x663E;&#x793A;Widgets&#x7684;&#x8BED;&#x4E49;&#x4FE1;&#x606F;&#x3002;&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5E73;&#x53F0;&#x76F8;&#x5173;&#x7684;&#x8F85;&#x52A9;Accessibility&#x5143;&#x7D20;&#x7684;&#x914D;&#x7F6E;&#x548C;&#x6E32;&#x67D3;&#x3002;</li>
+</ol>
+<p>&#x9664;&#x4E86;&#x6E32;&#x67D3;&#x76F8;&#x5173;&#x903B;&#x8F91;&#x4E4B;&#x5916;Root Isolate&#x8FD8;&#x662F;&#x5904;&#x7406;&#x6765;&#x81EA;Native Plugins&#x7684;&#x6D88;&#x606F;&#x54CD;&#x5E94;&#xFF0C;Timers&#xFF0C;MicroTasks&#x548C;&#x5F02;&#x6B65;IO&#x3002;
+ Root Isolate&#x8D1F;&#x8D23;&#x521B;&#x5EFA;&#x7BA1;&#x7406;&#x7684;Layer Tree&#x6700;&#x7EC8;&#x51B3;&#x5B9A;&#x4EC0;&#x4E48;&#x5185;&#x5BB9;&#x8981;&#x7ED8;&#x5236;&#x5230;&#x5C4F;&#x5E55;&#x4E0A;&#x3002;&#x56E0;&#x6B64;&#x8FD9;&#x4E2A;&#x7EBF;&#x7A0B;&#x7684;&#x8FC7;&#x8F7D;&#x4F1A;&#x76F4;&#x63A5;&#x5BFC;&#x81F4;&#x5361;&#x987F;&#x6389;&#x5E27;&#x3002;
+ &#x5982;&#x679C;&#x786E;&#x5B9E;&#x6709;&#x65E0;&#x6CD5;&#x907F;&#x514D;&#x7684;&#x7E41;&#x91CD;&#x8BA1;&#x7B97;&#xFF0C;&#x5EFA;&#x8BAE;&#x5C06;&#x5176;&#x653E;&#x5230;&#x72EC;&#x7ACB;&#x7684;Isolate&#x53BB;&#x6267;&#x884C;&#xFF0C;&#x6BD4;&#x5982;&#x4F7F;&#x7528;compute&#x5173;&#x952E;&#x5B57;&#x6216;&#x8005;&#x653E;&#x5230;&#x975E;Root Isolate&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x5E94;&#x7528;UI&#x5361;&#x987F;&#x3002;&#x4F46;&#x662F;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x975E;Root Isolate&#x7F3A;&#x5C11;Flutter&#x5F15;&#x64CE;&#x9700;&#x8981;&#x7684;&#x4E00;&#x4E9B;&#x51FD;&#x6570;&#x7ED1;&#x5B9A;&#xFF0C;&#x4F60;&#x65E0;&#x6CD5;&#x5728;&#x8FD9;&#x4E2A;Isolate&#x76F4;&#x63A5;&#x4E0E;Flutter Engine&#x4EA4;&#x4E92;&#x3002;&#x6240;&#x4EE5;&#x53EA;&#x5728;&#x9700;&#x8981;&#x5927;&#x91CF;&#x8BA1;&#x7B97;&#x7684;&#x65F6;&#x5019;&#x91C7;&#x7528;&#x72EC;&#x7ACB;Isolate&#x3002;</p>
+<h4 id="gpu-task-runner">GPU Task Runner</h4>
+<p>&#x7528;&#x4E8E;&#x6267;&#x884C;&#x8BBE;&#x5907;GPU&#x7684;&#x76F8;&#x5173;&#x8C03;&#x7528;&#x3002;UI Task Runner&#x521B;&#x5EFA;&#x7684;Layer Tree&#x4FE1;&#x606F;&#x662F;&#x5E73;&#x53F0;&#x4E0D;&#x76F8;&#x5173;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;Layer Tree&#x63D0;&#x4F9B;&#x4E86;&#x7ED8;&#x5236;&#x6240;&#x9700;&#x8981;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5177;&#x4F53;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x7ED8;&#x5236;&#x53D6;&#x51B3;&#x4E8E;&#x5177;&#x4F53;&#x5E73;&#x53F0;&#x548C;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;OpenGL&#xFF0C;Vulkan&#xFF0C;&#x8F6F;&#x4EF6;&#x7ED8;&#x5236;&#x6216;&#x8005;&#x5176;&#x4ED6;Skia&#x914D;&#x7F6E;&#x7684;&#x7ED8;&#x56FE;&#x5B9E;&#x73B0;&#x3002;GPU Task Runner&#x4E2D;&#x7684;&#x6A21;&#x5757;&#x8D1F;&#x8D23;&#x5C06;Layer Tree&#x63D0;&#x4F9B;&#x7684;&#x4FE1;&#x606F;&#x8F6C;&#x5316;&#x4E3A;&#x5B9E;&#x9645;&#x7684;GPU&#x6307;&#x4EE4;&#x3002;GPU Task Runner&#x540C;&#x65F6;&#x4E5F;&#x8D1F;&#x8D23;&#x914D;&#x7F6E;&#x7BA1;&#x7406;&#x6BCF;&#x4E00;&#x5E27;&#x7ED8;&#x5236;&#x6240;&#x9700;&#x8981;&#x7684;GPU&#x8D44;&#x6E90;&#xFF0C;&#x8FD9;&#x5305;&#x62EC;&#x5E73;&#x53F0;Framebuffer&#x7684;&#x521B;&#x5EFA;&#xFF0C;Surface&#x751F;&#x547D;&#x5468;&#x671F;&#x7BA1;&#x7406;&#xFF0C;&#x4FDD;&#x8BC1;Texture&#x548C;Buffers&#x5728;&#x7ED8;&#x5236;&#x7684;&#x65F6;&#x5019;&#x662F;&#x53EF;&#x7528;&#x7684;&#x3002;</p>
+<p>&#x57FA;&#x4E8E;Layer Tree&#x7684;&#x5904;&#x7406;&#x65F6;&#x957F;&#x548C;GPU&#x5E27;&#x663E;&#x793A;&#x5230;&#x5C4F;&#x5E55;&#x7684;&#x8017;&#x65F6;&#xFF0C;GPU Task Runner&#x53EF;&#x80FD;&#x4F1A;&#x5EF6;&#x8FDF;&#x4E0B;&#x4E00;&#x5E27;&#x5728;UI Task Runner&#x7684;&#x8C03;&#x5EA6;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;UI Runner&#x548C;GPU Runner&#x8DD1;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x7EBF;&#x7A0B;&#x3002;&#x5B58;&#x5728;&#x8FD9;&#x79CD;&#x53EF;&#x80FD;&#xFF0C;UI Runner&#x5728;&#x5DF2;&#x7ECF;&#x51C6;&#x5907;&#x597D;&#x4E86;&#x4E0B;&#x4E00;&#x5E27;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;GPU Runner&#x5374;&#x8FD8;&#x6B63;&#x5728;&#x5411;GPU&#x63D0;&#x4EA4;&#x4E0A;&#x4E00;&#x5E27;&#x3002;&#x8FD9;&#x79CD;&#x5EF6;&#x8FDF;&#x8C03;&#x5EA6;&#x673A;&#x5236;&#x786E;&#x4FDD;&#x4E0D;&#x8BA9;UI Runner&#x5206;&#x914D;&#x8FC7;&#x591A;&#x7684;&#x4EFB;&#x52A1;&#x7ED9;GPU Runner&#x3002;</p>
+<p>GPU Runner&#x53EF;&#x4EE5;&#x5BFC;&#x81F4;UI Runner&#x7684;&#x5E27;&#x8C03;&#x5EA6;&#x7684;&#x5EF6;&#x8FDF;&#xFF0C;GPU Runner&#x7684;&#x8FC7;&#x8F7D;&#x4F1A;&#x5BFC;&#x81F4;Flutter&#x5E94;&#x7528;&#x7684;&#x5361;&#x987F;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x7528;&#x6237;&#x6CA1;&#x6709;&#x673A;&#x4F1A;&#x5411;GPU Runner&#x76F4;&#x63A5;&#x63D0;&#x4EA4;&#x4EFB;&#x52A1;&#xFF0C;&#x56E0;&#x4E3A;&#x5E73;&#x53F0;&#x548C;Dart&#x4EE3;&#x7801;&#x90FD;&#x65E0;&#x6CD5;&#x8DD1;&#x8FDB;GPU Runner&#x3002;&#x4F46;&#x662F;Embeder&#x8FD8;&#x662F;&#x53EF;&#x4EE5;&#x5411;GPU Runner&#x63D0;&#x4EA4;&#x4EFB;&#x52A1;&#x7684;&#x3002;&#x56E0;&#x6B64;&#x5EFA;&#x8BAE;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;Engine&#x5B9E;&#x4F8B;&#x90FD;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x4E13;&#x7528;&#x7684;GPU Runner&#x7EBF;&#x7A0B;&#x3002;</p>
+<h4 id="io-task-runner">IO Task Runner</h4>
+<p>&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x662F;&#x4ECE;&#x56FE;&#x7247;&#x5B58;&#x50A8;&#xFF08;&#x6BD4;&#x5982;&#x78C1;&#x76D8;&#xFF09;&#x4E2D;&#x8BFB;&#x53D6;&#x538B;&#x7F29;&#x7684;&#x56FE;&#x7247;&#x683C;&#x5F0F;&#xFF0C;&#x5C06;&#x56FE;&#x7247;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x4E3A;GPU Runner&#x7684;&#x6E32;&#x67D3;&#x505A;&#x597D;&#x51C6;&#x5907;&#x3002;&#x5728;Texture&#x7684;&#x51C6;&#x5907;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;IO Runner&#x9996;&#x5148;&#x8981;&#x8BFB;&#x53D6;&#x538B;&#x7F29;&#x7684;&#x56FE;&#x7247;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#xFF08;&#x6BD4;&#x5982;PNG&#xFF0C;JPEG&#xFF09;&#xFF0C;&#x5C06;&#x5176;&#x89E3;&#x538B;&#x8F6C;&#x6362;&#x6210;GPU&#x80FD;&#x591F;&#x5904;&#x7406;&#x7684;&#x683C;&#x5F0F;&#x7136;&#x540E;&#x5C06;&#x6570;&#x636E;&#x4E0A;&#x4F20;&#x5230;GPU&#x3002;&#x8FD9;&#x4E9B;&#x590D;&#x6742;&#x64CD;&#x4F5C;&#x5982;&#x679C;&#x8DD1;&#x5728;GPU&#x7EBF;&#x7A0B;&#x7684;&#x8BDD;&#x4F1A;&#x5BFC;&#x81F4;Flutter&#x5E94;&#x7528;UI&#x5361;&#x987F;&#x3002;&#x4F46;&#x662F;&#x53EA;&#x6709;GPU Runner&#x80FD;&#x591F;&#x8BBF;&#x95EE;GPU&#xFF0C;&#x6240;&#x4EE5;IO Runner&#x6A21;&#x5757;&#x5728;&#x5F15;&#x64CE;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x914D;&#x7F6E;&#x4E86;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;Context&#xFF0C;&#x8FD9;&#x4E2A;Context&#x8DDF;GPU Runner&#x4F7F;&#x7528;&#x7684;Context&#x5728;&#x540C;&#x4E00;&#x4E2A;ShareGroup&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#x56FE;&#x7247;&#x6570;&#x636E;&#x7684;&#x8BFB;&#x53D6;&#x548C;&#x89E3;&#x538B;&#x662F;&#x53EF;&#x4EE5;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x6C60;&#x91CC;&#x9762;&#x53BB;&#x505A;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;Context&#x7684;&#x8BBF;&#x95EE;&#x53EA;&#x80FD;&#x5728;&#x7279;&#x5B9A;&#x7EBF;&#x7A0B;&#x624D;&#x80FD;&#x4FDD;&#x8BC1;&#x5B89;&#x5168;&#x3002;&#x8FD9;&#x4E5F;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x4E13;&#x95E8;&#x7684;Runner&#x6765;&#x5904;&#x7406;IO&#x4EFB;&#x52A1;&#x7684;&#x539F;&#x56E0;&#x3002;&#x83B7;&#x53D6;&#x8BF8;&#x5982;ui.Image&#x8FD9;&#x6837;&#x7684;&#x8D44;&#x6E90;&#x53EA;&#x6709;&#x901A;&#x8FC7;async call&#xFF0C;&#x5F53;&#x8FD9;&#x4E2A;&#x8C03;&#x7528;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x5019;Flutter Framework&#x544A;&#x8BC9;IO Runner&#x8FDB;&#x884C;&#x521A;&#x521A;&#x63D0;&#x5230;&#x7684;&#x90A3;&#x4E9B;&#x56FE;&#x7247;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x6837;GPU Runner&#x53EF;&#x4EE5;&#x4F7F;&#x7528;IO Runner&#x51C6;&#x5907;&#x597D;&#x7684;&#x56FE;&#x7247;&#x6570;&#x636E;&#x800C;&#x4E0D;&#x7528;&#x8FDB;&#x884C;&#x989D;&#x5916;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x7528;&#x6237;&#x64CD;&#x4F5C;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;Dart Code&#x8FD8;&#x662F;Native Plugins&#x90FD;&#x662F;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;IO Runner&#x3002;&#x5C3D;&#x7BA1;Embeder&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E9B;&#x4E00;&#x822C;&#x590D;&#x6742;&#x4EFB;&#x52A1;&#x8C03;&#x5EA6;&#x5230;IO Runner&#xFF0C;&#x8FD9;&#x4E0D;&#x4F1A;&#x76F4;&#x63A5;&#x5BFC;&#x81F4;Flutter&#x5E94;&#x7528;&#x5361;&#x987F;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x56FE;&#x7247;&#x548C;&#x5176;&#x5B83;&#x4E00;&#x4E9B;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x7684;&#x5EF6;&#x8FDF;&#x95F4;&#x63A5;&#x5F71;&#x54CD;&#x6027;&#x80FD;&#x3002;&#x6240;&#x4EE5;&#x5EFA;&#x8BAE;&#x4E3A;IO Runner&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E13;&#x7528;&#x7684;&#x7EBF;&#x7A0B;</p>
+<blockquote>
+<p>android &amp; iOS&#x5E73;&#x53F0;&#x4E0A;&#x9762;&#x6BCF;&#x4E00;&#x4E2A;Engine&#x5B9E;&#x4F8B;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x4E3A;UI&#xFF0C;GPU&#xFF0C;IO Runner&#x5404;&#x81EA;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7EBF;&#x7A0B;&#x3002;&#x6240;&#x6709;Engine&#x5B9E;&#x4F8B;&#x5171;&#x4EAB;&#x540C;&#x4E00;&#x4E2A;Platform Runner&#x7EBF;&#x7A0B;</p>
+</blockquote>
+<h2 id="isolate">isolate</h2>
+<p><img src="../imgs/flutterisolated.webp" alt="isolated"></p>
+<p>An isolated Dart execution context</p>
+<p>isolate&#x662F;Dart&#x5BF9;actor&#x5E76;&#x53D1;&#x6A21;&#x5F0F;&#x7684;&#x5B9E;&#x73B0;&#x3002;&#x8FD0;&#x884C;&#x4E2D;&#x7684;Dart&#x7A0B;&#x5E8F;&#x7531;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;actor&#x7EC4;&#x6210;&#xFF0C;actor&#x4E5F;&#x5C31;&#x662F;Dart&#x6982;&#x5FF5;&#x91CC;&#x9762;&#x7684;isolate&#x3002;isolate&#x662F;&#x9694;&#x79BB;&#x7684;&#xFF0C;&#x6BCF;&#x4E2A;isolate&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x5185;&#x5B58;&#x548C;&#x5355;&#x7EBF;&#x7A0B;&#x8FD0;&#x884C;&#x7684;&#x5B9E;&#x4F53;. isolate&#x4E4B;&#x95F4;&#x4E0D;&#x4E92;&#x76F8;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#xFF0C;&#x4E14;&#x72EC;&#x7ACB;GC&#x3002;
+ isolate&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x7684;&#xFF0C;&#x4E14;&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x5B58;&#x5728;&#x8D44;&#x6E90;&#x7ADE;&#x4E89;&#x548C;&#x53D8;&#x91CF;&#x72B6;&#x6001;&#x540C;&#x6B65;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4E5F;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x9501;&#x3002;Dart&#x4E2D;&#x7684;&#x5E76;&#x53D1;&#x90FD;&#x662F;&#x591A;&#x4E2A;isolate&#x5E76;&#x884C;&#x5B9E;&#x73B0;&#x7684;</p>
+<p>&#x7531;&#x4E8E;isolate&#x4E0D;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#xFF0C;&#x6240;&#x4EE5;isolate&#x4E4B;&#x95F4;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4E92;&#x76F8;&#x901A;&#x4FE1;&#xFF0C;&#x53EA;&#x80FD;&#x901A;&#x8FC7;Port&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF0C;&#x800C;&#x4E14;&#x662F;&#x5F02;&#x6B65;&#x7684;</p>
+<h2 id="flutter-engine-runners&#x4E0E;dart-isolate">Flutter Engine Runners&#x4E0E;Dart Isolate</h2>
+<p>Dart&#x7684;Isolate&#x662F;Dart&#x865A;&#x62DF;&#x673A;&#x81EA;&#x5DF1;&#x7BA1;&#x7406;&#x7684;&#xFF0C;Flutter Engine&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x3002;Root Isolate&#x901A;&#x8FC7;Dart&#x7684;C++&#x8C03;&#x7528;&#x80FD;&#x529B;&#x628A;UI&#x6E32;&#x67D3;&#x76F8;&#x5173;&#x7684;&#x4EFB;&#x52A1;&#x63D0;&#x4EA4;&#x5230;UI Runner&#x6267;&#x884C;, &#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x8DDF;Flutter Engine&#x76F8;&#x5173;&#x6A21;&#x5757;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;Flutter UI&#x76F8;&#x5173;&#x7684;&#x4EFB;&#x52A1;&#x4E5F;&#x88AB;&#x63D0;&#x4EA4;&#x5230;UI Runner&#x4E5F;&#x53EF;&#x4EE5;&#x76F8;&#x5E94;&#x7684;&#x7ED9;Isolate&#x4E00;&#x4E9B;&#x4E8B;&#x4EF6;&#x901A;&#x77E5;&#xFF0C;UI Runner&#x540C;&#x65F6;&#x4E5F;&#x5904;&#x7406;&#x6765;&#x81EA;App&#x65B9;&#x9762;Native Plugin&#x7684;&#x4EFB;&#x52A1;&#x3002; Dart isolate&#x8DDF;Flutter Runner&#x662F;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x5B83;&#x4EEC;&#x901A;&#x8FC7;&#x4EFB;&#x52A1;&#x8C03;&#x5EA6;&#x673A;&#x5236;&#x76F8;&#x4E92;&#x534F;&#x4F5C;&#x3002;</p>
+<h2 id="dart&#x5185;&#x5B58;&#x7BA1;&#x7406;">Dart&#x5185;&#x5B58;&#x7BA1;&#x7406;</h2>
+<p>Dart VM&#x5C06;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x5206;&#x4E3A;&#x65B0;&#x751F;&#x4EE3;(New Generation)&#x548C;&#x8001;&#x5E74;&#x4EE3;(Old Generation)</p>
+<ul>
+<li>&#x65B0;&#x751F;&#x4EE3;&#xFF1A;&#x521D;&#x6B21;&#x5206;&#x914D;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x4F4D;&#x4E8E;&#x65B0;&#x751F;&#x4EE3;&#x4E2D;&#xFF0C;&#x8BE5;&#x533A;&#x57DF;&#x4E3B;&#x8981;&#x662F;&#x5B58;&#x653E;&#x5185;&#x5B58;&#x8F83;&#x5C0F;&#x5E76;&#x4E14;&#x751F;&#x547D;&#x5468;&#x671F;&#x8F83;&#x77ED;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x6BD4;&#x5982;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x3002;&#x65B0;&#x751F;&#x4EE3;&#x4F1A;&#x9891;&#x7E41;&#x6267;&#x884C;&#x5185;&#x5B58;&#x56DE;&#x6536;(GC)&#xFF0C;&#x56DE;&#x6536;&#x91C7;&#x7528;&#x201C;&#x590D;&#x5236;-&#x6E05;&#x9664;&#x201D;&#x7B97;&#x6CD5;&#xFF0C;&#x5C06;&#x5185;&#x5B58;&#x5206;&#x4E3A;&#x4E24;&#x5757;&#xFF0C;&#x8FD0;&#x884C;&#x65F6;&#x6BCF;&#x6B21;&#x53EA;&#x4F7F;&#x7528;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x5757;&#xFF0C;&#x53E6;&#x4E00;&#x5757;&#x5907;&#x7528;&#x3002;&#x5F53;&#x53D1;&#x751F;GC&#x65F6;&#xFF0C;&#x5C06;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x5185;&#x5B58;&#x5757;&#x4E2D;&#x5B58;&#x6D3B;&#x7684;&#x5BF9;&#x8C61;&#x62F7;&#x8D1D;&#x5230;&#x5907;&#x7528;&#x5185;&#x5B58;&#x5757;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x6E05;&#x9664;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x5185;&#x5B58;&#x5757;&#xFF0C;&#x6700;&#x540E;&#xFF0C;&#x4EA4;&#x6362;&#x4E24;&#x5757;&#x5185;&#x5B58;&#x7684;&#x89D2;&#x8272;&#x3002;</li>
+<li>&#x8001;&#x5E74;&#x4EE3;: &#x5728;&#x65B0;&#x751F;&#x4EE3;&#x7684;GC&#x4E2D;&#x201C;&#x5E78;&#x5B58;&#x201D;&#x4E0B;&#x6765;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x4EEC;&#x4F1A;&#x88AB;&#x8F6C;&#x79FB;&#x5230;&#x8001;&#x5E74;&#x4EE3;&#x4E2D;&#x3002;&#x8001;&#x5E74;&#x4EE3;&#x5B58;&#x653E;&#x751F;&#x547D;&#x529B;&#x5468;&#x671F;&#x8F83;&#x957F;&#xFF0C;&#x5185;&#x5B58;&#x8F83;&#x5927;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x8001;&#x5E74;&#x4EE3;&#x7684;GC&#x56DE;&#x6536;&#x91C7;&#x7528;&#x201C;&#x6807;&#x8BB0;-&#x6E05;&#x9664;&#x201D;&#x7B97;&#x6CD5;&#xFF0C;&#x5206;&#x6210;&#x6807;&#x8BB0;&#x548C;&#x6E05;&#x9664;&#x4E24;&#x4E2A;&#x9636;&#x6BB5;&#x3002;&#x5728;&#x6807;&#x8BB0;&#x9636;&#x6BB5;&#x4F1A;&#x89E6;&#x53D1;&#x505C;&#x987F;&#xFF0C;&#x591A;&#x7EBF;&#x7A0B;&#x5E76;&#x53D1;&#x7684;&#x5B8C;&#x6210;&#x5BF9;&#x5783;&#x573E;&#x5BF9;&#x8C61;&#x7684;&#x6807;&#x8BB0;&#xFF0C;&#x964D;&#x4F4E;&#x6807;&#x8BB0;&#x9636;&#x6BB5;&#x8017;&#x65F6;&#x3002;&#x5728;&#x6E05;&#x7406;&#x9636;&#x6BB5;&#xFF0C;&#x7531;GC&#x7EBF;&#x7A0B;&#x8D1F;&#x8D23;&#x6E05;&#x7406;&#x56DE;&#x6536;&#x5BF9;&#x8C61;&#xFF0C;&#x548C;&#x5E94;&#x7528;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x6267;&#x884C;&#xFF0C;&#x4E0D;&#x5F71;&#x54CD;&#x5E94;&#x7528;&#x8FD0;&#x884C;&#x3002;</li>
+</ul>
+<h2 id="flutter&#x4E2D;&#x7684;image&#x6240;&#x5360;&#x7684;&#x5185;&#x5B58;">Flutter&#x4E2D;&#x7684;image&#x6240;&#x5360;&#x7684;&#x5185;&#x5B58;</h2>
+<p>Android&#x5C06;&#x4E2D;&#x5185;&#x5B58;&#x5206;java&#x5185;&#x5B58;&#x6216;native&#x5185;&#x5B58;&#xFF0C;&#x901A;&#x5E38;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x7533;&#x8BF7;&#x7684;&#x5185;&#x5B58;&#x90FD;&#x5728;&#x8FD9;&#x4E24;&#x4E2A;&#x8303;&#x56F4;&#x5185;</p>
+<p>java&#x5185;&#x5B58;&#x662F;&#x6307;java&#x6216;kotlin&#x5206;&#x914D;&#x7684;&#x5185;&#x5B58;&#x5BF9;&#x8C61;
+ native&#x5185;&#x5B58;&#x662F;&#x6307;&#x7531;C/C++&#x4E2D;&#x5206;&#x914D;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x4E5F;&#x5305;&#x62EC;&#x4E00;&#x4E9B;android&#x539F;&#x751F;&#x7CFB;&#x7EDF;&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x5982;&#x56FE;&#x50CF;&#x8D44;&#x6E90;&#x548C;&#x5176;&#x4ED6;&#x56FE;&#x5F62;&#x7B49;</p>
+<p>Flutter&#x4E2D;&#x7684;image&#x5360;&#x7528;&#x7684;&#x4E0D;&#x7528;&#x8FD9;&#x4E24;&#x79CD;&#x5185;&#x5B58;&#xFF0C;&#x800C;&#x662F;Graphics&#x5185;&#x5B58;&#xFF0C;Graphics&#x5185;&#x5B58;&#x5185;&#x5B58;&#x662F;&#x6307;&#x56FE;&#x5F62;&#x7F13;&#x51B2;&#x533A;&#x961F;&#x5217;&#x5411;&#x5C4F;&#x5E55;&#x663E;&#x793A;&#x50CF;&#x7D20;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x56FE;&#x5F62;&#x7F13;&#x51B2;&#x533A;&#x662F;&#x6307;GL&#x8868;&#x9762;&#xFF0C;GL&#x7EB9;&#x7406;&#x7B49;&#x3002;Graphics&#x5185;&#x5B58;&#x662F;&#x4E0E;CPU&#x5171;&#x4EAB;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x800C;&#x4E0D;&#x662F;GPU&#x4E13;&#x7528;&#x7684;&#x5185;&#x5B58;</p>
+<h2 id="flutter&#x8FD0;&#x884C;&#x6A21;&#x5F0F;">Flutter&#x8FD0;&#x884C;&#x6A21;&#x5F0F;</h2>
+<p>Flutter&#x5E38;&#x89C1;&#x7684;&#x79CD;&#x8FD0;&#x884C;&#x6A21;&#x5F0F;&#xFF1A;Debug&#xFF0C;Release&#x548C;Profile</p>
+<p>Release&#x548C;Profile&#x6A21;&#x5F0F;&#x6BD4;&#x8F83;&#x7C7B;&#x4F3C;&#xFF0C;&#x4E0D;&#x7528;&#x4E4B;&#x5904;&#x5728;&#x4E8E;Profile&#x6A21;&#x5F0F;&#x7684;&#x670D;&#x52A1;&#x6269;&#x5C55;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x652F;&#x6301;&#x8DDF;&#x8E2A;&#xFF0C;&#x4EE5;&#x53CA;&#x6700;&#x5C0F;&#x5316;&#x4F7F;&#x7528;&#x8DDF;&#x8E2A;&#x4FE1;&#x606F;&#x9700;&#x8981;&#x7684;&#x4F9D;&#x8D56;&#x3002;Profile&#x5E76;&#x4E0D;&#x652F;&#x6301;&#x6A21;&#x62DF;&#x5668;&#xFF0C;&#x539F;&#x56E0;&#x5728;&#x4E8E;&#x6A21;&#x62DF;&#x5668;&#x4E0A;&#x7684;&#x8BCA;&#x65AD;&#x5E76;&#x4E0D;&#x4EE3;&#x8868;&#x771F;&#x5B9E;&#x7684;&#x6027;&#x80FD;&#x3002;&#x6240;&#x6709;&#x91CD;&#x70B9;&#x622A;&#x4ECB;&#x7ECD;
+ Debug&#x548C;Release&#x7684;&#x5DEE;&#x5F02;</p>
+<ul>
+<li>Debug&#x6A21;&#x5F0F;&#xFF1A;&#x4F7F;&#x7528;JIT&#x7F16;&#x8BD1;&#xFF0C;&#x652F;&#x6301;&#x6A21;&#x62DF;&#x5668;&#x548C;&#x8BBE;&#x5907;&#x3002;&#x6253;&#x5F00;&#x4E86;&#x65AD;&#x8A00;&#x652F;&#x6301;&#xFF0C;&#x5305;&#x62EC;&#x6240;&#x6709;&#x7684;&#x8C03;&#x8BD5;&#x4FE1;&#x606F;&#xFF0C;&#x670D;&#x52A1;&#x6269;&#x5C55;&#x548C;Observatory&#x7B49;&#x8C03;&#x8BD5;&#x8F85;&#x52A9;&#x3002;&#x6B64;&#x6A21;&#x5F0F;&#x4E3A;&#x5FEB;&#x901F;&#x5F00;&#x53D1;&#x548C;&#x8FD0;&#x884C;&#x505A;&#x4E86;&#x4F18;&#x5316;&#xFF0C;&#x4F46;&#x5E76;&#x672A;&#x5BF9;&#x6267;&#x884C;&#x901F;&#x5EA6;&#xFF0C;&#x5305;&#x5927;&#x5C0F;&#x548C;&#x90E8;&#x7F72;&#x505A;&#x4F18;&#x5316;&#x3002;
+ &#x6240;&#x4EE5;&#x80FD;&#x5B9E;&#x73B0;&#x79D2;&#x7EA7;&#x522B;&#x7684;hot reload</li>
+<li>Release&#x6A21;&#x5F0F;&#xFF1A;&#x4F7F;&#x7528;AOT&#x7F16;&#x8BD1;&#xFF0C;&#x53EA;&#x652F;&#x6301;&#x771F;&#x673A;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x6A21;&#x62DF;&#x5668;&#x3002;&#x5173;&#x95ED;&#x4E86;&#x6240;&#x6709;&#x65AD;&#x8A00;&#xFF0C;&#x5C3D;&#x53EF;&#x80FD;&#x591A;&#x5730;&#x53BB;&#x6389;&#x4E86;&#x8C03;&#x8BD5;&#x4FE1;&#x606F;&#xFF0C;&#x5173;&#x95ED;&#x4E86;&#x6240;&#x6709;&#x8C03;&#x8BD5;&#x5DE5;&#x5177;&#x3002;&#x4E3A;&#x5FEB;&#x901F;&#x542F;&#x52A8;&#xFF0C;&#x5FEB;&#x901F;&#x6267;&#x884C;&#xFF0C;&#x5305;&#x5927;&#x5C0F;&#x505A;&#x4E86;&#x4F18;&#x5316;&#x3002;&#x7981;&#x6B62;&#x4E86;&#x6240;&#x6709;&#x8C03;&#x8BD5;&#x8F85;&#x52A9;&#x624B;&#x6BB5;&#xFF0C;&#x670D;&#x52A1;&#x6269;&#x5C55;&#x3002;</li>
+</ul>
+<h2 id="flutter-platform-channel">Flutter Platform Channel</h2>
+<p>Platform Channel&#x7528;&#x6765;&#x5B9E;&#x73B0;flutter&#x548C;Native&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x8BAF;&#xFF0C;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x8FDC;&#x7A0B;&#x901A;&#x8BAF;&#x3002;</p>
+<p>Flutter&#x5B9A;&#x4E49;&#x4E86;&#x4E09;&#x79CD;Channel&#xFF1A;</p>
+<ul>
+<li>BasicMessageChannel&#xFF1A;&#x7528;&#x4E8E;&#x4F20;&#x9012;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x534A;&#x7ED3;&#x6784;&#x5316;&#x7684;&#x4FE1;&#x606F;</li>
+<li>MethodChannel&#xFF1A;&#x7528;&#x4E8E;&#x4F20;&#x9012;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF08;method invocation&#xFF09;</li>
+<li>EventChannel: &#x7528;&#x4E8E;&#x6570;&#x636E;&#x6D41;&#xFF08;event streams&#xFF09;&#x7684;&#x901A;&#x4FE1;</li>
+</ul>
+<p>&#x8FD9;&#x4E09;&#x79CD;channel&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x90FD;&#x4E00;&#x81F4;&#xFF0C;&#x90FD;&#x7528;&#x4E09;&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x5C5E;&#x6027;&#xFF1A;</p>
+<ul>
+<li>name:  String&#x7C7B;&#x578B;&#xFF0C;&#x4EE3;&#x8868;Channel&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x4E5F;&#x662F;&#x5176;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;</li>
+<li>Messager&#xFF1A;BinaryMessenger&#x7C7B;&#x578B;&#xFF0C;&#x4EE3;&#x8868;&#x6D88;&#x606F;&#x4FE1;&#x4F7F;&#xFF0C;&#x662F;&#x6D88;&#x606F;&#x7684;&#x53D1;&#x9001;&#x4E0E;&#x63A5;&#x6536;&#x7684;&#x5DE5;&#x5177;</li>
+<li>codec: MessageCodec&#x7C7B;&#x578B;&#x6216;MethodCodec&#x7C7B;&#x578B;&#xFF0C;&#x4EE3;&#x8868;&#x6D88;&#x606F;&#x7684;&#x7F16;&#x89E3;&#x7801;&#x5668;</li>
+</ul>
+<p>BinaryMessenger&#x662F;Native&#x7AEF;&#x4E0E;Flutter&#x7AEF;&#x901A;&#x4FE1;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x5176;&#x901A;&#x4FE1;&#x4F7F;&#x7528;&#x7684;&#x6D88;&#x606F;&#x683C;&#x5F0F;&#x4E3A;&#x4E8C;&#x8FDB;&#x5236;&#x683C;&#x5F0F;&#x6570;&#x636E;&#x3002;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;Channel&#xFF0C;&#x5E76;&#x5411;&#x8BE5;Channel&#x6CE8;&#x518C;&#x5904;&#x7406;&#x6D88;&#x606F;&#x7684;Handler&#x65F6;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#x7684;BinaryMessageHandler&#xFF0C;&#x5E76;&#x4EE5;channel name&#x4E3A;key&#xFF0C;&#x6CE8;&#x518C;&#x5230;BinaryMessenger&#x4E2D;&#x3002;&#x5F53;Flutter&#x7AEF;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5230;BinaryMessenger&#x65F6;&#xFF0C;BinaryMessenger&#x4F1A;&#x6839;&#x636E;&#x5176;&#x5165;&#x53C2;channel&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;BinaryMessageHandler&#xFF0C;&#x5E76;&#x4EA4;&#x7531;&#x5176;&#x5904;&#x7406;&#x3002;</p>
+<p>BinaryMessenger&#x53EA;&#x548C;BinaryMessageHandler&#x901A;&#x8BAF;&#x3002;&#x800C;Channel&#x548C;BinaryMessageHandler&#x5219;&#x662F;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x7684;&#x3002;&#x7531;&#x4E8E;Channel&#x4ECE;BinaryMessageHandler&#x63A5;&#x6536;&#x5230;&#x7684;&#x6D88;&#x606F;&#x662F;&#x4E8C;&#x8FDB;&#x5236;&#x683C;&#x5F0F;&#x6570;&#x636E;&#xFF0C;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#xFF0C;&#x6545;Channel&#x4F1A;&#x5C06;&#x8BE5;&#x4E8C;&#x8FDB;&#x5236;&#x6D88;&#x606F;&#x901A;&#x8FC7;Codec&#xFF08;&#x6D88;&#x606F;&#x7F16;&#x89E3;&#x7801;&#x5668;&#xFF09;&#x89E3;&#x7801;&#x4E3A;&#x80FD;&#x8BC6;&#x522B;&#x7684;&#x6D88;&#x606F;&#x5E76;&#x4F20;&#x9012;&#x7ED9;Handler&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x5F53;Handler&#x5904;&#x7406;&#x5B8C;&#x6D88;&#x606F;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x901A;&#x8FC7;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x8FD4;&#x56DE;result&#xFF0C;&#x5E76;&#x5C06;result&#x901A;&#x8FC7;&#x7F16;&#x89E3;&#x7801;&#x5668;&#x7F16;&#x7801;&#x4E3A;&#x4E8C;&#x8FDB;&#x5236;&#x683C;&#x5F0F;&#x6570;&#x636E;&#xFF0C;&#x901A;&#x8FC7;BinaryMessenger&#x53D1;&#x9001;&#x56DE;Flutter&#x7AEF;&#x3002;</p>
+<p>Codec&#xFF1A;&#x606F;&#x7F16;&#x89E3;&#x7801;&#x5668;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x5C06;&#x4E8C;&#x8FDB;&#x5236;&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x8F6C;&#x5316;&#x4E3A;Handler&#x80FD;&#x591F;&#x8BC6;&#x522B;&#x7684;&#x6570;&#x636E;&#xFF0C;Flutter&#x5B9A;&#x4E49;&#x4E86;&#x4E24;&#x79CD;Codec&#xFF1A;MessageCodec&#x548C;MethodCodec</p>
+<p>MessageCodec&#x7528;&#x4E8E;&#x4E8C;&#x8FDB;&#x5236;&#x683C;&#x5F0F;&#x6570;&#x636E;&#x4E0E;&#x57FA;&#x7840;&#x6570;&#x636E;&#x4E4B;&#x95F4;&#x7684;&#x7F16;&#x7801;&#x548C;&#x89E3;&#x7801;&#x3002;&#x6709;&#x591A;&#x91CD;&#x5B9E;&#x73B0;&#x5982;&#xFF1A;BinaryCodec&#xFF0C; StringCodec&#xFF0C; JSONMessageCodec&#x7B49;</p>
+<p>MethodCodec&#x7528;&#x4E8E;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x4E0E;&#x65B9;&#x6CD5;&#x8C03;&#x7528;(MethodCall)&#x548C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E4B;&#x95F4;&#x7684;&#x7F16;&#x89E3;&#x7801;&#x3002;MethodChannel&#x548C;EventChannel&#x6240;&#x4F7F;&#x7528;&#x7684;&#x7F16;&#x89E3;&#x7801;&#x5668;&#x5747;&#x4E3A;MethodCodec&#x3002;</p>
+<p>MethodCodec&#x7528;&#x4E8E;MethodCall&#x5BF9;&#x8C61;&#x7684;&#x7F16;&#x89E3;&#x7801;&#xFF0C;&#x4E00;&#x4E2A;MethodCall&#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x4E00;&#x6B21;&#x4ECE;Flutter&#x7AEF;&#x53D1;&#x8D77;&#x7684;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3002;MethodCall&#x6709;2&#x4E2A;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF1A;String&#x7C7B;&#x578B;&#x7684;method&#x4EE3;&#x8868;&#x9700;&#x8981;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x540D;&#x79F0;&#xFF0C;&#x901A;&#x7528;&#x7C7B;&#x578B;(Android&#x4E2D;&#x4E3A;Object&#xFF0C;iOS&#x4E2D;&#x4E3A;id)&#x7684;arguments&#x4EE3;&#x8868;&#x9700;&#x8981;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x5165;&#x53C2;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x5904;&#x7406;&#x7684;&#x662F;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF0C;MethodCodec&#x591A;&#x4E86;&#x5BF9;&#x8C03;&#x7528;&#x7ED3;&#x679C;&#x7684;&#x5904;&#x7406;&#x3002;&#x5F53;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x6210;&#x529F;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;encodeSuccessEnvelope&#x5C06;result&#x7F16;&#x7801;&#x4E3A;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x5F53;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x5931;&#x8D25;&#x65F6;&#xFF0C;&#x5219;&#x4F7F;&#x7528;encodeErrorEnvelope&#x5C06;error&#x7684;code&#x3001;message&#x3001;detail&#x7F16;&#x7801;&#x4E3A;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x3002;</p>
+<p>MethodCodec&#x6709;&#x4E24;&#x79CD;&#x5B9E;&#x73B0;&#xFF1A;JSONMethodCodec&#x548C;StandardMethodCodec</p>
+<p>&#x7531;&#x4E8E;Platform Channel&#x8FD0;&#x884C;&#x5728;flutter App&#x7684;UI Task Runner, &#x5BF9;&#x5E94;&#x7684;native&#x5B9E;&#x73B0;&#x8FD0;&#x884C;&#x5728;Platform Task Runner&#xFF0C;&#x800C;Platform Task Runner&#x8FD0;&#x884C;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#xFF0C;&#x6240;&#x4EE5;&#x5728;native&#x5B9E;&#x73B0;&#x662F;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#x8017;&#x65F6;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x4E14;Platform Task Runner&#x662F;&#x975E;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x4FDD;&#x8BC1;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x6267;&#x884C;</p>
+<p>Platform Channel&#x652F;&#x6301;&#x5927;&#x6570;&#x636E;&#x4F20;&#x9012;&#xFF0C;&#x4F20;&#x9012;&#x5927;&#x5185;&#x5B58;&#x6570;&#x636E;&#x5757;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;BasicMessageChannel&#x4EE5;&#x53CA;BinaryCodec&#x3002;&#x800C;&#x6574;&#x4E2A;&#x6570;&#x636E;&#x4F20;&#x9012;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x552F;&#x4E00;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x6570;&#x636E;&#x62F7;&#x8D1D;&#x7684;&#x4F4D;&#x7F6E;&#x4E3A;native&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x8F6C;&#x5316;&#x4E3A;Dart&#x8BED;&#x8A00;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x3002;&#x82E5;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x5927;&#x4E8E;&#x9608;&#x503C;&#x65F6;&#xFF08;&#x76EE;&#x524D;&#x9608;&#x503C;&#x4E3A;1000byte&#xFF09;&#x5219;&#x4E0D;&#x4F1A;&#x62F7;&#x8D1D;&#x6570;&#x636E;&#xFF0C;&#x76F4;&#x63A5;&#x8F6C;&#x5316;&#xFF0C;&#x5426;&#x5219;&#x62F7;&#x8D1D;&#x4E00;&#x4EFD;&#x518D;&#x8F6C;&#x5316;&#x3002;</p>
+<h2 id="flutter&#x4E2D;&#x7684;widget">flutter&#x4E2D;&#x7684;widget</h2>
+<p>&#x4E07;&#x7269;&#x7686;widget</p>
+<p>&#x76EE;&#x524D;&#x4E3B;&#x6D41;&#x7684;&#x601D;&#x60F3;&#xFF0C;&#x90FD;&#x5E0C;&#x671B;&#x5C06;&#x5404;&#x4E2A;ui&#x63A7;&#x4EF6;&#x63A5;&#x8026;&#xFF0C;&#x6162;&#x6162;&#x6F14;&#x53D8;&#x51FA;&#x7EC4;&#x4EF6;&#x5316;&#x7684;&#x601D;&#x60F3;&#x3002;</p>
+<p>Flutter&#x63A7;&#x4EF6;&#x4E3B;&#x8981;&#x5206;&#x4E3A;&#x4E24;&#x5927;&#x7C7B;&#xFF0C;StatelessWidget&#x548C;StatefulWidget&#xFF0C;StatelessWidget&#x7528;&#x6765;&#x5C55;&#x793A;&#x9759;&#x6001;&#x7684;&#x6587;&#x672C;&#x6216;&#x8005;&#x56FE;&#x7247;&#xFF0C;&#x5982;&#x679C;&#x63A7;&#x4EF6;&#x9700;&#x8981;&#x6839;&#x636E;&#x5916;&#x90E8;&#x6570;&#x636E;&#x6216;&#x8005;&#x7528;&#x6237;&#x64CD;&#x4F5C;&#x6765;&#x6539;&#x53D8;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;StatefulWidget&#x3002;State&#x7684;&#x6982;&#x5FF5;&#x4E5F;&#x662F;&#x6765;&#x6E90;&#x4E8E;Facebook&#x7684;&#x6D41;&#x884C;Web&#x6846;&#x67B6;<a href="http://facebook.github.io/react/" target="_blank">React</a>&#xFF0C;React&#x98CE;&#x683C;&#x7684;&#x6846;&#x67B6;&#x4E2D;&#x4F7F;&#x7528;&#x63A7;&#x4EF6;&#x6811;&#x548C;&#x5404;&#x81EA;&#x7684;&#x72B6;&#x6001;&#x6765;&#x6784;&#x5EFA;&#x754C;&#x9762;&#xFF0C;&#x5F53;&#x67D0;&#x4E2A;&#x63A7;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x7531;&#x6846;&#x67B6;&#x8D1F;&#x8D23;&#x5BF9;&#x6BD4;&#x524D;&#x540E;&#x72B6;&#x6001;&#x5DEE;&#x5F02;&#x5E76;&#x4E14;&#x91C7;&#x53D6;&#x6700;&#x5C0F;&#x4EE3;&#x4EF7;&#x6765;&#x66F4;&#x65B0;&#x6E32;&#x67D3;&#x7ED3;&#x679C;&#x3002;</p>
+<p>widget&#x6548;&#x679C;&#x89C1;&#x8FD9;&#x4E24;&#x7BC7;&#x6587;&#x7AE0; <a href="https://blog.csdn.net/qq_38366777/article/details/83089782" target="_blank">widget &#x5E94;&#x7528;&#x4E00;</a>  <a href="https://blog.csdn.net/qq_38366777/article/details/83108977" target="_blank">widget &#x5E94;&#x7528;&#x4E8C;</a></p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x4E3B;&#x8981;&#x770B;&#x4E0B;&#x6E32;&#x67D3;&#x6811;&#x548C;flutter&#x5F15;&#x64CE;&#x7ED1;&#x5B9A;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x770B;&#x4E00;&#x4E0B;binding.dart&#x3001;object.dart&#xFF0C;&#x5206;&#x6790;&#x4E0B;flutter&#x662F;&#x5982;&#x4F55;&#x6E32;&#x67D3;&#x7684;</p>
+<pre><code>abstract class RendererBinding extends BindingBase with ServicesBinding, SchedulerBinding, HitTestable { ... }
+abstract class RenderObject extends AbstractNode with DiagnosticableTreeMixin implements HitTestTarget {
+abstract class RenderBox extends RenderObject { ... }
+class RenderParagraph extends RenderBox { ... }
+class RenderImage extends RenderBox { ... }
+class RenderFlex extends RenderBox with ContainerRenderObjectMixin&lt;RenderBox, FlexParentData&gt;,
+                                        RenderBoxContainerDefaultsMixin&lt;RenderBox, FlexParentData&gt;,
+                                        DebugOverflowIndicatorMixin { ... }
+</code></pre><p>&#x521B;&#x5EFA;[RenderView]&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;[RenderObject]&#x5448;&#x73B0;&#x6811;&#x7684;&#x6839;&#xFF0C;&#x5E76;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x5F15;&#x64CE;&#x4E0B;&#x6B21;&#x51C6;&#x5907;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x6846;&#x67B6;&#x65F6;&#x5C06;&#x5176;&#x5448;&#x73B0;&#x3002;</p>
+<p>&#x521B;&#x5EFA;&#x7ED1;&#x5B9A;&#x662F;&#x81EA;&#x52A8;&#x8C03;&#x7528;</p>
+<p>&#x6BCF;&#x4E2A;&#x6846;&#x67B6;&#x7531;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x9636;&#x6BB5;&#x7EC4;&#x6210;:</p>
+<ol>
+<li><p>The animation phase:</p>
+</li>
+<li><p>Microtasks: </p>
+</li>
+<li><p>The layout phase: &#x5E03;&#x5C40;&#x9636;&#x6BB5;:</p>
+</li>
+</ol>
+<p>&#x5E03;&#x5C40;&#x9636;&#x6BB5;:&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x810F;&#x7684;[RenderObject]&#x90FD;&#x88AB;&#x653E;&#x7F6E;(&#x89C1;[RenderObject.performLayout])&#x3002;[RenderObject.markNeedsLayout]</p>
+<p>&#x6709;&#x5173;&#x4E3A;&#x5E03;&#x5C40;&#x6807;&#x8BB0;&#x810F;&#x5BF9;&#x8C61;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</p>
+<ol>
+<li><p>The compositing bits phase: &#x5408;&#x6210;&#x90E8;&#x5206;&#x9636;&#x6BB5;</p>
+</li>
+<li><p>The paint phase:&#x7ED8;&#x5236;&#x9636;&#x6BB5;:</p>
+</li>
+</ol>
+<p>&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x6E32;&#x67D3;&#x5BF9;&#x8C61;&#x90FD;&#x662F;&#x91CD;&#x65B0;&#x7ED8;&#x5236;(&#x89C1;[RenderObject.paint])&#x3002;&#x8FD9;&#x5C06;&#x751F;&#x6210;[&#x5C42;]&#x6811;</p>
+<ol>
+<li>The compositing phase:</li>
+</ol>
+<p>&#x5408;&#x6210;&#x9636;&#x6BB5;:&#x5C06;&#x56FE;&#x5C42;&#x6811;&#x8F6C;&#x6362;&#x4E3A;[&#x573A;&#x666F;]&#x548C;&#x53D1;&#x9001;&#x5230;GPU&#x3002;</p>
+<ol>
+<li><p>The semantics phase:&#x8BED;&#x4E49;&#x9636;&#x6BB5;</p>
+</li>
+<li><p>The finalization phase:&#x7ED3;&#x675F;&#x9636;&#x6BB5;</p>
+</li>
+</ol>
+<p>&#x770B;&#x4E00;&#x4E0B;&#x4EE3;&#x7801;&#x5F53;&#x4E2D;&#x7684;&#x5177;&#x4F53;&#x6267;&#x884C; </p>
+<pre><code>  @protected
+  void drawFrame() {
+    assert(renderView != null);
+    pipelineOwner.flushLayout(); //1
+    pipelineOwner.flushCompositingBits();//2
+    pipelineOwner.flushPaint();//3
+    renderView.compositeFrame(); // this sends the bits to the GPU
+    pipelineOwner.flushSemantics(); // this also sends the semantics to the OS. //4
+  }
+</code></pre><p>1&#x3002;&#x66F4;&#x65B0;&#x4EFB;&#x4F55;&#x9700;&#x8981;&#x8BA1;&#x7B97;&#x5B83;&#x4EEC;&#x7684;&#x6E32;&#x67D3;&#x5BF9;&#x8C61;&#x5E03;&#x5C40;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x6BCF;&#x4E2A;&#x6E32;&#x67D3;&#x7684;&#x5927;&#x5C0F;&#x548C;&#x4F4D;&#x7F6E;&#x8BA1;&#x7B97;&#x5BF9;&#x8C61;&#x3002;&#x6E32;&#x67D3;&#x5BF9;&#x8C61;&#x53EF;&#x80FD;&#x4F1A;&#x5F04;&#x810F;&#x4ED6;&#x4EEC;&#x7684;&#x753B;&#x6216;&#x8FD9;&#x4E00;&#x9636;&#x6BB5;&#x7684;&#x5408;&#x6210;&#x72B6;&#x6001;&#x3002;</p>
+<p>2&#x3002;&#x66F4;&#x65B0;&#x6709;dirty&#x7684;&#x6E32;&#x67D3;&#x5BF9;&#x8C61;&#x5408;&#x6210;&#x90E8;&#x5206;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x6BCF;&#x4E2A;&#x5448;&#x73B0;&#x5BF9;&#x8C61;&#x90FD;&#x77E5;&#x9053;&#x662F;&#x5426;&#x5B83;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5B69;&#x5B50;&#x90FD;&#x9700;&#x8981;&#x5408;&#x6210;&#x3002;&#x6B64;&#x4FE1;&#x606F;&#x5728;&#x671F;&#x95F4;&#x4F7F;&#x7528;</p>
+<p>&#x7ED8;&#x753B;&#x9636;&#x6BB5;&#x9009;&#x62E9;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x89C6;&#x89C9;&#x6548;&#x679C;&#x7B49;&#x526A;&#x88C1;&#x3002;&#x5982;&#x679C;&#x5448;&#x73B0;&#x5BF9;&#x8C61;&#x6709;&#x4E00;&#x4E2A;&#x5408;&#x6210;&#x7684;&#x5B50;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;</p>
+<p>[&#x5C42;]&#x6765;&#x521B;&#x5EFA;&#x526A;&#x8F91;&#xFF0C;&#x4EE5;&#x4FBF;&#x8BE5;&#x526A;&#x8F91;&#x5E94;&#x7528;&#x4E8E;&#x5408;&#x6210;&#x5B50;&#x5143;&#x7D20;(&#x5C06;&#x88AB;&#x7ED8;&#x5236;&#x5230;&#x5B83;&#x81EA;&#x5DF1;&#x7684;[&#x56FE;&#x5C42;]&#x4E2D;)&#x3002;</p>
+<p>3.&#x8BBF;&#x95EE;&#x4EFB;&#x4F55;&#x9700;&#x8981;&#x7ED8;&#x5236;&#x7684;&#x6E32;&#x67D3;&#x5BF9;&#x8C61;&#x3002;&#x5728;&#x8FD9;&#x9636;&#x6BB5;&#xFF0C;&#x6E32;&#x67D3;&#x5BF9;&#x8C61;&#x6709;&#x673A;&#x4F1A;&#x8BB0;&#x5F55;&#x7ED8;&#x5236;&#x547D;&#x4EE4;[&#x56FE;&#x7247;&#x56FE;&#x5C42;]&#xFF0C;&#x5E76;&#x6784;&#x5EFA;&#x5176;&#x4ED6;&#x5408;&#x6210;&#x7684;[&#x56FE;&#x5C42;]&#x3002;</p>
+<p>4.&#x5C06;&#x7F16;&#x8BD1;&#x5448;&#x73B0;&#x5BF9;&#x8C61;&#x7684;&#x8BED;&#x4E49;&#x3002;&#x8FD9;&#x4E2A;&#x8BED;&#x4E49;&#x4FE1;&#x606F;&#x88AB;&#x4F7F;&#x7528;&#x8F85;&#x52A9;&#x6280;&#x672F;&#xFF0C;&#x4EE5;&#x6539;&#x5584;&#x6E32;&#x67D3;&#x6811;&#x7684;&#x53EF;&#x8BBF;&#x95EE;&#x6027;&#x3002;</p>
+<p><img src="../imgs/fluttergpu.png" alt="img"></p>
+<p><img src="../imgs/jianzhuchicun.png" alt="img"></p>
+<p>&#x6E32;&#x67D3;&#x5BF9;&#x8C61;&#x6811;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x4F1A;&#x5728;&#x5E03;&#x5C40;&#x8FC7;&#x7A0B;&#x4E2D;&#x63A5;&#x53D7;&#x7236;&#x5BF9;&#x8C61;&#x7684;<code>Constraints</code>&#x53C2;&#x6570;&#xFF0C;&#x51B3;&#x5B9A;&#x81EA;&#x5DF1;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x7136;&#x540E;&#x7236;&#x5BF9;&#x8C61;&#x5C31;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x903B;&#x8F91;&#x51B3;&#x5B9A;&#x5404;&#x4E2A;&#x5B50;&#x5BF9;&#x8C61;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x5B8C;&#x6210;&#x5E03;&#x5C40;&#x8FC7;&#x7A0B;&#x3002;&#x5B50;&#x5BF9;&#x8C61;&#x4E0D;&#x5B58;&#x50A8;&#x81EA;&#x5DF1;&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x5B83;&#x7684;&#x4F4D;&#x7F6E;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x65F6;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x5E03;&#x5C40;&#x6216;&#x8005;&#x7ED8;&#x5236;&#x3002;&#x5B50;&#x5BF9;&#x8C61;&#x7684;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x5B58;&#x50A8;&#x5728;&#x5B83;&#x81EA;&#x5DF1;&#x7684;<code>parentData</code>&#x5B57;&#x6BB5;&#x4E2D;&#xFF0C;&#x4F46;&#x662F;&#x8BE5;&#x5B57;&#x6BB5;&#x7531;&#x5B83;&#x7684;&#x7236;&#x5BF9;&#x8C61;&#x8D1F;&#x8D23;&#x7EF4;&#x62A4;&#xFF0C;&#x81EA;&#x8EAB;&#x5E76;&#x4E0D;&#x5173;&#x5FC3;&#x8BE5;&#x5B57;&#x6BB5;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x540C;&#x65F6;&#x4E5F;&#x56E0;&#x4E3A;&#x8FD9;&#x79CD;&#x7B80;&#x5355;&#x7684;&#x5E03;&#x5C40;&#x903B;&#x8F91;&#xFF0C;Flutter&#x53EF;&#x4EE5;&#x5728;&#x67D0;&#x4E9B;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x5E03;&#x5C40;&#x8FB9;&#x754C;&#xFF08;Relayout boundary&#xFF09;&#xFF0C;&#x5373;&#x5F53;&#x8FB9;&#x754C;&#x5185;&#x7684;&#x4EFB;&#x4F55;&#x5BF9;&#x8C61;&#x53D1;&#x751F;&#x91CD;&#x65B0;&#x5E03;&#x5C40;&#x65F6;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x8FB9;&#x754C;&#x5916;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x53CD;&#x4E4B;&#x4EA6;&#x7136;&#xFF1A;</p>
+<p><img src="../imgs/layoutbianjie.webp" alt="img"></p>
+<p>&#x5E03;&#x5C40;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6E32;&#x67D3;&#x5BF9;&#x8C61;&#x6811;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x90FD;&#x6709;&#x4E86;&#x660E;&#x786E;&#x7684;&#x5C3A;&#x5BF8;&#x548C;&#x4F4D;&#x7F6E;&#xFF0C;Flutter&#x4F1A;&#x628A;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x7ED8;&#x5236;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x56FE;&#x5C42;&#x4E0A;&#xFF1A;</p>
+<p><img src="../imgs/chicunweizhi.png" alt="img"></p>
+<p>&#x56E0;&#x4E3A;&#x7ED8;&#x5236;&#x8282;&#x70B9;&#x65F6;&#x4E5F;&#x662F;&#x6DF1;&#x5EA6;&#x904D;&#x5386;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x7B2C;&#x4E8C;&#x4E2A;&#x8282;&#x70B9;&#x5728;&#x7ED8;&#x5236;&#x5B83;&#x7684;&#x80CC;&#x666F;&#x548C;&#x524D;&#x666F;&#x4E0D;&#x5F97;&#x4E0D;&#x7ED8;&#x5236;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x56FE;&#x5C42;&#x4E0A;&#xFF0C;&#x56E0;&#x4E3A;&#x7B2C;&#x56DB;&#x4E2A;&#x8282;&#x70B9;&#x5207;&#x6362;&#x4E86;&#x56FE;&#x5C42;&#xFF08;&#x56E0;&#x4E3A;&#x201C;4&#x201D;&#x8282;&#x70B9;&#x662F;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x72EC;&#x5360;&#x4E00;&#x4E2A;&#x56FE;&#x5C42;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6BD4;&#x5982;&#x89C6;&#x9891;&#xFF09;&#xFF0C;&#x800C;&#x7B2C;&#x516D;&#x4E2A;&#x8282;&#x70B9;&#x4E5F;&#x4E00;&#x8D77;&#x7ED8;&#x5236;&#x5230;&#x4E86;&#x7EA2;&#x8272;&#x56FE;&#x5C42;&#x3002;&#x8FD9;&#x6837;&#x4F1A;&#x5BFC;&#x81F4;&#x7B2C;&#x4E8C;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x524D;&#x666F;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x201C;5&#x201D;&#xFF09;&#x90E8;&#x5206;&#x9700;&#x8981;&#x91CD;&#x7ED8;&#x65F6;&#xFF0C;&#x548C;&#x5B83;&#x5728;&#x903B;&#x8F91;&#x4E0A;&#x6BEB;&#x4E0D;&#x76F8;&#x5E72;&#x4F46;&#x662F;&#x5904;&#x4E8E;&#x540C;&#x4E00;&#x56FE;&#x5C42;&#x7684;&#x7B2C;&#x516D;&#x4E2A;&#x8282;&#x70B9;&#x4E5F;&#x5FC5;&#x987B;&#x91CD;&#x7ED8;&#x3002;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;Flutter&#x63D0;&#x4F9B;&#x4E86;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x201C;&#x91CD;&#x7ED8;&#x8FB9;&#x754C;&#x201D;&#x7684;&#x6982;&#x5FF5;&#xFF1A;</p>
+<p>&#x5728;&#x8FDB;&#x5165;&#x548C;&#x8D70;&#x51FA;&#x91CD;&#x7ED8;&#x8FB9;&#x754C;&#x65F6;&#xFF0C;Flutter&#x4F1A;&#x5F3A;&#x5236;&#x5207;&#x6362;&#x65B0;&#x7684;&#x56FE;&#x5C42;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x8FB9;&#x754C;&#x5185;&#x5916;&#x7684;&#x4E92;&#x76F8;&#x5F71;&#x54CD;&#x3002;&#x5178;&#x578B;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x5C31;&#x662F;ScrollView&#xFF0C;&#x5F53;&#x6EDA;&#x52A8;&#x5185;&#x5BB9;&#x91CD;&#x7ED8;&#x65F6;&#xFF0C;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x5176;&#x4ED6;&#x5185;&#x5BB9;&#x662F;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x7ED8;&#x7684;&#x3002;&#x867D;&#x7136;&#x91CD;&#x7ED8;&#x8FB9;&#x754C;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x4F55;&#x8282;&#x70B9;&#x624B;&#x52A8;&#x8BBE;&#x7F6E;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x822C;&#x4E0D;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;Flutter&#x63D0;&#x4F9B;&#x7684;&#x63A7;&#x4EF6;&#x9ED8;&#x8BA4;&#x4F1A;&#x5728;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x5730;&#x65B9;&#x81EA;&#x52A8;&#x8BBE;&#x7F6E;</p>
+<h2 id="widget&#x603B;&#x7ED3;">widget&#x603B;&#x7ED3;</h2>
+<p>&#x5728;Flutter&#x754C;&#x9762;&#x6E32;&#x67D3;&#x8FC7;&#x7A0B;&#x5206;&#x4E3A;&#x4E09;&#x4E2A;&#x9636;&#x6BB5;&#xFF1A;&#x5E03;&#x5C40;&#x3001;&#x7ED8;&#x5236;&#x3001;&#x5408;&#x6210;&#xFF0C;&#x5E03;&#x5C40;&#x548C;&#x7ED8;&#x5236;&#x5728;Flutter&#x6846;&#x67B6;&#x4E2D;&#x5B8C;&#x6210;&#xFF0C;&#x5408;&#x6210;&#x5219;&#x4EA4;&#x7531;&#x5F15;&#x64CE;&#x8D1F;&#x8D23;&#x3002;</p>
+<p><img src="../imgs/widgetzongjie.png" alt="img"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="uni-app.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: uni-app优化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"flutter-架构理解","level":"1.8.3","depth":2,"next":{"title":"Nginx","level":"1.9","depth":1,"ref":"","articles":[{"title":"常用功能","level":"1.9.1","depth":2,"path":"js/nginx-base.md","ref":"js/nginx-base.md","articles":[]},{"title":"基本命令和基本配置","level":"1.9.2","depth":2,"path":"js/nginx-set.md","ref":"js/nginx-set.md","articles":[]},{"title":"使用细节","level":"1.9.3","depth":2,"ref":"","articles":[{"title":"root和alias区别","level":"1.9.3.1","depth":3,"path":"js/root-alias.md","ref":"js/root-alias.md","articles":[]},{"title":"location和proxy_pass路径合并","level":"1.9.3.2","depth":3,"path":"js/proxy_pass.md","ref":"js/proxy_pass.md","articles":[]}]}]},"previous":{"title":"uni-app优化","level":"1.8.2","depth":2,"path":"js/uni-app.md","ref":"js/uni-app.md","articles":[]},"dir":"ltr"},"config":{"plugins":["url-embed","expandable-chapters","code","splitter","-sharing","sharing-plus","github","custom-favicon","livereload"],"styles":{"website":"styles/hide.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"Copyright  @罗玉璞"},"github":{"url":"https://github.com/zhenmang/day-day-up/blob/master/SUMMARY.md"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"imgs/pufanyouzhu.ico","custom-favicon":{},"url-embed":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp","pocket"],"douban":true,"facebook":true,"weibo":true,"instapaper":true,"whatsapp":true,"twitter":true,"messenger":true,"pocket":true,"google":true,"viber":true,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"罗玉璞","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Luoyupu","links":{"sidebar":{}},"gitbook":"*","description":"深入浅出的前端知识"},"file":{"path":"js/flutter.md","mtime":"2020-09-25T13:54:12.105Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-28T15:20:41.485Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

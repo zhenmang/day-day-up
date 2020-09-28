@@ -5,7 +5,7 @@
   "styles": {
     "website": "styles/hide.css"
   },
-  "plugins": ["url-embed", "expandable-chapters", "code", "splitter", "-sharing", "sharing-plus", "tbfed-pagefooter", "github", "custom-favicon"],
+  "plugins": ["url-embed", "expandable-chapters", "code", "splitter", "-sharing", "sharing-plus", "github", "custom-favicon"],
   "pluginsConfig": {
     "favicon": "imgs/pufanyouzhu.ico",
     "code": {
@@ -39,7 +39,6 @@
   },
   "links": {
     "sidebar" : {
-      "github" : "https://github.com/zhenmang/day-day-up/blob/master/SUMMARY.md"
     }
   }
 }
