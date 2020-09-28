@@ -5,16 +5,26 @@
   "styles": {
     "website": "styles/hide.css"
   },
-  "plugins": ["url-embed", "expandable-chapters", "code", "splitter", "-sharing", "sharing-plus", "github", "custom-favicon"],
+  "plugins": ["url-embed", "expandable-chapters", "code", "splitter", "-sharing", "sharing-plus", "tbfed-pagefooter", "github", "custom-favicon"],
   "pluginsConfig": {
     "favicon": "imgs/pufanyouzhu.ico",
     "code": {
       "copyButtons": false
     },
     "sharing": {
+      "douban": true,
       "facebook": true,
       "google": true,
+      "instapaper": true,
+      "linkedin": true,
+      "twitter": true,
+      "weibo": true,
+      "messenger": true,
       "qq": true,
+      "qzone": true,
+      "viber": true,
+      "whatsapp": true,
+      "pocket": true,
       "all": [
         "douban", "facebook", "google", "instapaper", "linkedin","twitter", "weibo", 
         "messenger","qq", "qzone","viber","whatsapp", "pocket"
@@ -29,6 +39,7 @@
   },
   "links": {
     "sidebar" : {
+      "github" : "https://github.com/zhenmang/day-day-up/blob/master/SUMMARY.md"
     }
   }
 }

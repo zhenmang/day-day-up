@@ -19,6 +19,7 @@
   - [3d舞台 transform-style](c3/transform-style.md)
   - [3d视觉方位perspective-origin](c3/perspective-origin.md)
   - [3d穿透backface-visibility](c3/backface-visibility.md)
+<<<<<<< HEAD
   - [rem布局](c3/smart-rem.md)
 - frame
   - [vue-source-code](http://localhost:8081/vue-design/zh/essence-of-comp.html)
@@ -85,3 +86,16 @@
   - [微服务](js/weifuwu.md)
   - [单元化](js/danyuanhua.md)
   - [XaaS](js/xaas.md)
+=======
+- frame source
+  - [vue](frame-source/vue.md)
+  - [React](frame-source/react.md)
+  
+- code standards
+  - [eslint](code_standard/eslint.md)
+  - [prettier](code_standard/prettier.md)
+
+- layout mode
+  - [smart-rem(English)](layout/smart-rem.md)
+  - [smart-rem(Chinese)](layout/smart-rem-cn.md)
+>>>>>>> c8b1269cb54e52593698248d070bb8bc85594e2c
