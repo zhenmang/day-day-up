@@ -50,7 +50,7 @@
 
    
 
-9. 坚持使用 transform 和 opacity 属性更改来实现动画，只触发合成器，不触发回流和重绘  
+9. 坚持使用 transform 和 opacity 属性更改来实现动画，只触发合成器，不触发回流和重绘 。例如使用 `will-change` 或 `translateZ` 提升移动的元素
 
    
 

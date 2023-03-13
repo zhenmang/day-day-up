@@ -14,7 +14,7 @@
 
 微服务
 
-![](/imgs/weifuwu.png)
+![](/imgs/weifuwu.jpg)
 
 
 

@@ -137,8 +137,6 @@ where条件：还可以使用比较运算、算数运算、逻辑运算、正则
 
 `SELECT * FROM movie WHERE created_date like '%04%';`
 
-![like](/imgs/like.png)
-
 结果处理：distinct去重，limit限定行数、order by结果排序(默认asc升序，des降序c)，group by分组，having设置条件，
 
 关联查询：内联、左联、右联。
