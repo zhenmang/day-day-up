@@ -38,6 +38,10 @@
                 -webkit-transform-style: preserve-3d;
                 border: 1px solid #46B8DA;
                 opacity: 0.5;
+                font-size: 20px;
+                text-align: center;
+                line-height: 100px;
+                color: red;
             }
             .one{
                 transform: rotateY(0deg) translateZ(50px);
@@ -57,9 +61,18 @@
             .six{
                 transform: rotateY(-90deg) translateZ(50px);
             }
-            .cub:hover{
+            /* .cub:hover{
                 transform: rotateX(360deg) rotateY(360deg);
                 -webkit-transform: rotateX(360deg) rotateY(360deg);
+            } */
+            @keyframes xuanzhuan {
+                100% {
+                    transform: rotateX(360deg) rotateY(360deg);
+                    -webkit-transform: rotateX(360deg) rotateY(360deg);
+                }
+            }
+            .cub {
+                animation: xuanzhuan 5s 0s infinite;
             }
 
             /* .cub:hover .one{
@@ -85,12 +98,12 @@
     <body>
         <div class="container">
             <div class="cub">
-                <div class="one" style="background-color: #FFC0CB"></div>
-                <div class="two" style="background-color: #449D44"></div>
-                <div class="three" style="background-color:#46B8DA"></div>
-                <div class="four" style="background-color: #9E90EE"></div>
-                <div class="five" style="background-color: #C0A16B"></div>
-                <div class="six" style="background-color: #D6E9C6"></div>
+                <div class="one" style="background-color: #FFC0CB">温</div>
+                <div class="two" style="background-color: #449D44">故</div>
+                <div class="three" style="background-color:#46B8DA">知</div>
+                <div class="four" style="background-color: #9E90EE">新</div>
+                <div class="five" style="background-color: #C0A16B">加</div>
+                <div class="six" style="background-color: #D6E9C6">油</div>
             </div>
         </div>
     </body>

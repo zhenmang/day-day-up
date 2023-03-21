@@ -161,26 +161,6 @@ console.log(t.getDeep(t.root, 0));
 console.log(t.getNode(5,t.root));
 ```
 
-### **二分查找**
-
-```
-function binarySearch(target, arr, start, end) {
-  if (start > end) {
-    return -1
-  }
-  var mid = Math.floor((start + end) / 2)
-  if (target === arr[mid]) {
-    return mid
-  } else if (target < arr[mid]) {
-    return binarySearch(target, arr, start, mid - 1)
-  } else {
-    return binarySearch(target, arr, mid + 1, end)
-  }
-}
-var arr = [0, 0, 1, 2, 3, 5, 4, 6, 7, 8]
-console.log(binarySearch(1, arr, 0, arr.length-1)); 
-```
-
 ### **中序遍历**
 
 ```
@@ -364,15 +344,17 @@ function reConstruct(pre, vin) {
   if(pre.length === 1){
      return new TreeNode(pre[0])
   }
+  const root = new TreeNode(pre[0]);
   var index = vin.indexOf(pre[0]) 
-  var vinLeft =  vin.slice(0, index)
-  var vinRight =  vin.slice(index+1)
   var preLeft = pre.slice(1, index+1)
+  var vinLeft =  vin.slice(0, index)
+  root.left = reConstruct(preLeft, vinLeft);
+
   var preRight = pre.slice(index+1)
-  const node = new TreeNode(value);
-  node.left = reConstruct(preLeft, vinLeft);
-  node.right = reConstruct(preRight, vinRight);
-  return  node
+  var vinRight =  vin.slice(index+1)
+  root.right = reConstruct(preRight, vinRight);
+
+  return  root
 }
 ```
 
@@ -437,17 +419,20 @@ XEDGAF
 3. 右子树的左节点和左子树的右节点相同。
 
 ```text
-function isSymmetrical(a, b) {
-  if (!a || !b || a !== b) {
-    return false
-  }
-  if (isSymmetrical(a.right) !== isSymmetrical(b.left)) {
-    return false
-  }
-  if (isSymmetrical(a.left) !== isSymmetrical(b.right)) {
-    return false
-  }
-  return true
+/**
+ * @param {TreeNode} root
+ * @return {boolean}
+ */
+var isSymmetric = function(root) {
+    if(!root) return true 
+    return check(root,root)
+};
+var check = function(A,B){
+    if(!A&&!B) return true
+    if(!A||!B) return false
+    return A.val===B.val
+    &&check(A.left,B.right)
+    &&check(A.right,B.left)
 }
 ```
 

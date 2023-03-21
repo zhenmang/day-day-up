@@ -1497,22 +1497,6 @@ t.postOrder(t.root);//0 2 1 6 7 5 8 3
 console.log(t.getMin(), t.getMax());
 console.log(t.getDeep(t.root, 0));
 console.log(t.getNode(5,t.root));
-</code></pre><h3 id="&#x4E8C;&#x5206;&#x67E5;&#x627E;"><strong>&#x4E8C;&#x5206;&#x67E5;&#x627E;</strong></h3>
-<pre><code>function binarySearch(target, arr, start, end) {
-  if (start &gt; end) {
-    return -1
-  }
-  var mid = Math.floor((start + end) / 2)
-  if (target === arr[mid]) {
-    return mid
-  } else if (target &lt; arr[mid]) {
-    return binarySearch(target, arr, start, mid - 1)
-  } else {
-    return binarySearch(target, arr, mid + 1, end)
-  }
-}
-var arr = [0, 0, 1, 2, 3, 5, 4, 6, 7, 8]
-console.log(binarySearch(1, arr, 0, arr.length-1));
 </code></pre><h3 id="&#x4E2D;&#x5E8F;&#x904D;&#x5386;"><strong>&#x4E2D;&#x5E8F;&#x904D;&#x5386;</strong></h3>
 <pre><code>function inOrder(root, arr = []) {
   if(node){
@@ -1668,15 +1652,17 @@ console.log(binarySearch(1, arr, 0, arr.length-1));
   if(pre.length === 1){
      return new TreeNode(pre[0])
   }
+  const root = new TreeNode(pre[0]);
   var index = vin.indexOf(pre[0]) 
-  var vinLeft =  vin.slice(0, index)
-  var vinRight =  vin.slice(index+1)
   var preLeft = pre.slice(1, index+1)
+  var vinLeft =  vin.slice(0, index)
+  root.left = reConstruct(preLeft, vinLeft);
+
   var preRight = pre.slice(index+1)
-  const node = new TreeNode(value);
-  node.left = reConstruct(preLeft, vinLeft);
-  node.right = reConstruct(preRight, vinRight);
-  return  node
+  var vinRight =  vin.slice(index+1)
+  root.right = reConstruct(preRight, vinRight);
+
+  return  root
 }
 </code></pre>
 <h3 id="&#x6C42;&#x4E8C;&#x53C9;&#x6811;&#x904D;&#x5386;"><strong>&#x6C42;&#x4E8C;&#x53C9;&#x6811;&#x904D;&#x5386;</strong></h3>
@@ -1729,17 +1715,20 @@ XEDGAF
 <li>&#x5DE6;&#x5B50;&#x6811;&#x7684;&#x53F3;&#x8282;&#x70B9;&#x548C;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x5DE6;&#x8282;&#x70B9;&#x76F8;&#x540C;&#x3002;</li>
 <li>&#x53F3;&#x5B50;&#x6811;&#x7684;&#x5DE6;&#x8282;&#x70B9;&#x548C;&#x5DE6;&#x5B50;&#x6811;&#x7684;&#x53F3;&#x8282;&#x70B9;&#x76F8;&#x540C;&#x3002;</li>
 </ol>
-<pre><code class="lang-text">function isSymmetrical(a, b) {
-  if (!a || !b || a !== b) {
-    return false
-  }
-  if (isSymmetrical(a.right) !== isSymmetrical(b.left)) {
-    return false
-  }
-  if (isSymmetrical(a.left) !== isSymmetrical(b.right)) {
-    return false
-  }
-  return true
+<pre><code class="lang-text">/**
+ * @param {TreeNode} root
+ * @return {boolean}
+ */
+var isSymmetric = function(root) {
+    if(!root) return true 
+    return check(root,root)
+};
+var check = function(A,B){
+    if(!A&amp;&amp;!B) return true
+    if(!A||!B) return false
+    return A.val===B.val
+    &amp;&amp;check(A.left,B.right)
+    &amp;&amp;check(A.right,B.left)
 }
 </code></pre>
 <p>&#x64CD;&#x4F5C;&#x7ED9;&#x5B9A;&#x7684;&#x4E8C;&#x53C9;&#x6811;&#xFF0C;&#x5C06;&#x5176;&#x53D8;&#x6362;&#x4E3A;&#x6E90;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x955C;&#x50CF;&#x3002;</p>
@@ -2094,7 +2083,7 @@ function compare(r1,r2) {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"数据结构之二叉树","level":"1.3.4","depth":2,"next":{"title":"算法之冒泡","level":"1.3.5","depth":2,"path":"js/bubble.md","ref":"js/bubble.md","articles":[]},"previous":{"title":"数据结构之链表","level":"1.3.3","depth":2,"path":"js/lianbiao.md","ref":"js/lianbiao.md","articles":[]},"dir":"ltr"},"config":{"plugins":["url-embed","expandable-chapters","code","splitter","-sharing","sharing-plus","github","custom-favicon","livereload"],"styles":{"website":"styles/hide.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"Copyright  @罗玉璞"},"github":{"url":"https://github.com/zhenmang/day-day-up/blob/master/SUMMARY.md"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"imgs/pufanyouzhu.ico","custom-favicon":{},"url-embed":{},"sharing":{"facebook":true,"google":true,"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp","pocket"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"罗玉璞","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Luoyupu","links":{"sidebar":{}},"gitbook":"*","description":"深入浅出的前端知识"},"file":{"path":"js/erchashu.md","mtime":"2020-09-24T11:09:35.747Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-17T00:43:05.767Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"数据结构之二叉树","level":"1.3.4","depth":2,"next":{"title":"算法之冒泡","level":"1.3.5","depth":2,"path":"js/bubble.md","ref":"js/bubble.md","articles":[]},"previous":{"title":"数据结构之链表","level":"1.3.3","depth":2,"path":"js/lianbiao.md","ref":"js/lianbiao.md","articles":[]},"dir":"ltr"},"config":{"plugins":["url-embed","expandable-chapters","code","splitter","-sharing","sharing-plus","github","custom-favicon","livereload"],"styles":{"website":"styles/hide.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"Copyright  @罗玉璞"},"github":{"url":"https://github.com/zhenmang/day-day-up/blob/master/SUMMARY.md"},"livereload":{},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"imgs/pufanyouzhu.ico","custom-favicon":{},"url-embed":{},"sharing":{"facebook":true,"google":true,"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp","pocket"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"罗玉璞","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Luoyupu","links":{"sidebar":{}},"gitbook":"*","description":"深入浅出的前端知识"},"file":{"path":"js/erchashu.md","mtime":"2023-03-20T08:53:20.754Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-21T03:29:30.677Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
