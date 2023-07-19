@@ -1,4 +1,4 @@
-### jQuery 基本使用
+### jQuery 常用方法及其实现原理
 
 #### 链式调用
 
@@ -16,7 +16,8 @@ $('xxx')
     .css("background", "red")
     .css("color", "green")
     .on("click", function(event) {
-    　　alert("hello worl
+    　　alert("hello worl")
+    })
 ```
 
 #### 样式
@@ -79,25 +80,15 @@ jQuery("#some-selector").on("click keyup change", myEventHandler);
 ### jQuery中的部分经典实现
 
 #### 轻污染闭包
-
+```
+IIFE
+(function(){}())
+(function(){})()
+```
 ```
 (function(global, factory){
     ...
-})(typeof window !== "undefined" ? window : this, function( window, noGlobal(){...});
-```
-
-更好压缩
-
-```
-// 压缩策略
-
-// w -> windwow , u -> undefined
-
-(function(w, u) {
-
- 
-
-})(window);
+})(typeof window !== "undefined" ? window : this, function( window, noGlobal(){...}){});
 ```
 
 #### $返回实例

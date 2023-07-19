@@ -1,4 +1,4 @@
-再不用smart-rem，可能就out了。这是一个可以自动计算rem的代码库，它适用于所有主流开发环境：
+smart-rem，一个可以自动计算rem的代码库，它适用于所有主流开发环境，如果接入了postcss，也可以使用postcss-auto-rem
 
 **浏览器环境**
 

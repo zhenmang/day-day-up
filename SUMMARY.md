@@ -2,24 +2,27 @@
 
 - Computer_Principles 
   
+  - [字符集编码](js/zifuji.md) 
   - [编译过程](js/bianyi.md)  
   - [AST](js/js-ast.md)  
   - [虚拟机、影子系统、沙盒](js/sanbox-vm.md)  
-  - [字符集编码](js/zifuji.md)  
+  
 - Js  
   
-  - [数据结构之堆](js/dui.md)  
-  - [数据结构之栈与队列](js/zhan.md)  
-  - [数据结构之链表](js/lianbiao.md)  
-  - [数据结构之二叉树](js/erchashu.md)  
-  - [算法之冒泡](js/bubble.md)  
-  - [算法之二分查找](js/half-lookup.md)  
-  - [算法之快排](js/kuaipai.md)  
-  - [算法复杂度](js/complexity.md)  
+  - [数据结构-堆](js/dui.md)  
+  - [数据结构-栈与队列](js/zhan.md)  
+  - [数据结构-链表](js/lianbiao.md)  
+  - [数据结构-二叉树](js/erchashu.md)  
+  - [算法-复杂度](js/complexity.md)  
+  - [算法-冒泡](js/bubble.md)  
+  - [算法-二分查找](js/half-lookup.md)  
+  - [算法-快排](js/kuaipai.md)  
+  - [算法-动态规划](js/dynamic-plan.md)
+  - [算法-区间合并](js/interval-merge.md)
   - [设计模式之单例](js/unique.md)  
   - [设计模式之继承](js/inherit.md)  
   - [设计模式之观察者](js/observer.md)  
-  - [高阶函数](js/gaojie.md)  
+  - [设计模式-备忘](js/gaojie.md)  
 - C3 
   - [2d基点位置transform-origin](c3/transform-origin.md)  
   - [3d透视距离perspective](c3/perspective.md)  
@@ -70,13 +73,17 @@
   - [运行机制](js/nodequdong.md)  
   - [多进程实现](js/duojincheng.md)  
 - Mysql 
-  - [常用功能](js/mysql-base.md)  
+  - [常用功能](mysql/mysql-base.md)  
+  - [设计范式](mysql/table_fanshi.md)
+  - [事务特性](mysql/transaction.md)
   - 慢查  
-    - [记录慢查](js/mancha.md)  
-    - [慢查优化](js/manchayouhua.md)  
+    - [记录慢查](mysql/mancha.md)  
+    - [慢查优化](mysql/manchayouhua.md)  
 - Redis 
-  - [常用操作指令](js/redis-op.md)  
-  - [淘汰机制和缓存策略](js/redistaotai.md)  
+  - [常用操作指令](redis/redis-op.md)  
+  - [淘汰机制和缓存策略](redis/redistaotai.md)
+  - [Pub/Sub](redis/pub_sub.md)
+  - [@socket.io/redis-adapter](redis/socket_adapter.md)
 - CDN 
   - [运行原理](js/cnd-yuanli.md)  
   - [适用场景](js/cdn-shiyong.md)  
@@ -86,3 +93,10 @@
   - [微服务](js/weifuwu.md)  
   - [单元化](js/danyuanhua.md)  
   - [XaaS](js/xaas.md)  
+- Deployment_Services
+  - [部署nginx](nginx/zero_deploy.md) 
+  - [部署java](java/zero_deploy.md) 
+  - [部署php](php/zero_deploy.md) 
+  - [部署mysql](mysql/zero_deploy.md) 
+  - [部署redis](redis/zero_deploy.md) 
+  - [高并发实践](linux/high_concurrency.md) 

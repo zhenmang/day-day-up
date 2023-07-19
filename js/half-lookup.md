@@ -15,21 +15,23 @@
 ```
 /**
 * @param {Array} arr
-* @param {*} dest
+* @param {*} target
 */
-var binarySearch = function (arr, dest) {
-  var start = 0
-  var end = arr.length - 1
-  while (start <= end) {
-    var middle = Math.floor((start + end) / 2)
-    if (dest > arr[middle]) {
-      start = middle + 1
-    } else if (dest < arr[middle]) {
-      end = middle - 1
-    } else {
-      return middle
+function binarySearch(arr, target) {
+    var left = 0;
+    var right = arr.length - 1;
+    var index = -1;
+    while (left <= right && index === -1) {
+            var mid = Math.floor((left + right)/2);
+            if (target > arr[mid]) {
+                left = mid + 1;
+            } else if (target < arr[mid]) {
+                right = mid - 1;
+            } else {
+                index = mid;
+            }
     }
-  }
+    return index;
 }
 
 var arr = [-34, 1, 3, 4, 5, 8, 34, 45, 65, 87]
